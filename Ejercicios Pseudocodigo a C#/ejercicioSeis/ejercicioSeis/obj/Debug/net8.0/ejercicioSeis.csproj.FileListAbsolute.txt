@@ -1,0 +1,15 @@
+D:\Documentos\GitHub\Programacion1-ValentinoCarignano-2024\ejercicioSeis\ejercicioSeis\bin\Debug\net8.0\ejercicioSeis.exe
+D:\Documentos\GitHub\Programacion1-ValentinoCarignano-2024\ejercicioSeis\ejercicioSeis\bin\Debug\net8.0\ejercicioSeis.deps.json
+D:\Documentos\GitHub\Programacion1-ValentinoCarignano-2024\ejercicioSeis\ejercicioSeis\bin\Debug\net8.0\ejercicioSeis.runtimeconfig.json
+D:\Documentos\GitHub\Programacion1-ValentinoCarignano-2024\ejercicioSeis\ejercicioSeis\bin\Debug\net8.0\ejercicioSeis.dll
+D:\Documentos\GitHub\Programacion1-ValentinoCarignano-2024\ejercicioSeis\ejercicioSeis\bin\Debug\net8.0\ejercicioSeis.pdb
+D:\Documentos\GitHub\Programacion1-ValentinoCarignano-2024\ejercicioSeis\ejercicioSeis\obj\Debug\net8.0\ejercicioSeis.GeneratedMSBuildEditorConfig.editorconfig
+D:\Documentos\GitHub\Programacion1-ValentinoCarignano-2024\ejercicioSeis\ejercicioSeis\obj\Debug\net8.0\ejercicioSeis.AssemblyInfoInputs.cache
+D:\Documentos\GitHub\Programacion1-ValentinoCarignano-2024\ejercicioSeis\ejercicioSeis\obj\Debug\net8.0\ejercicioSeis.AssemblyInfo.cs
+D:\Documentos\GitHub\Programacion1-ValentinoCarignano-2024\ejercicioSeis\ejercicioSeis\obj\Debug\net8.0\ejercicioSeis.csproj.CoreCompileInputs.cache
+D:\Documentos\GitHub\Programacion1-ValentinoCarignano-2024\ejercicioSeis\ejercicioSeis\obj\Debug\net8.0\ejercicioSeis.sourcelink.json
+D:\Documentos\GitHub\Programacion1-ValentinoCarignano-2024\ejercicioSeis\ejercicioSeis\obj\Debug\net8.0\ejercicioSeis.dll
+D:\Documentos\GitHub\Programacion1-ValentinoCarignano-2024\ejercicioSeis\ejercicioSeis\obj\Debug\net8.0\refint\ejercicioSeis.dll
+D:\Documentos\GitHub\Programacion1-ValentinoCarignano-2024\ejercicioSeis\ejercicioSeis\obj\Debug\net8.0\ejercicioSeis.pdb
+D:\Documentos\GitHub\Programacion1-ValentinoCarignano-2024\ejercicioSeis\ejercicioSeis\obj\Debug\net8.0\ejercicioSeis.genruntimeconfig.cache
+D:\Documentos\GitHub\Programacion1-ValentinoCarignano-2024\ejercicioSeis\ejercicioSeis\obj\Debug\net8.0\ref\ejercicioSeis.dll

@@ -1,0 +1,14 @@
+C:\Users\valen\OneDrive\Escritorio\programacion\ejercicioDos\ejercicioDos\bin\Debug\net8.0\ejercicioDos.exe
+C:\Users\valen\OneDrive\Escritorio\programacion\ejercicioDos\ejercicioDos\bin\Debug\net8.0\ejercicioDos.deps.json
+C:\Users\valen\OneDrive\Escritorio\programacion\ejercicioDos\ejercicioDos\bin\Debug\net8.0\ejercicioDos.runtimeconfig.json
+C:\Users\valen\OneDrive\Escritorio\programacion\ejercicioDos\ejercicioDos\bin\Debug\net8.0\ejercicioDos.dll
+C:\Users\valen\OneDrive\Escritorio\programacion\ejercicioDos\ejercicioDos\bin\Debug\net8.0\ejercicioDos.pdb
+C:\Users\valen\OneDrive\Escritorio\programacion\ejercicioDos\ejercicioDos\obj\Debug\net8.0\ejercicioDos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\valen\OneDrive\Escritorio\programacion\ejercicioDos\ejercicioDos\obj\Debug\net8.0\ejercicioDos.AssemblyInfoInputs.cache
+C:\Users\valen\OneDrive\Escritorio\programacion\ejercicioDos\ejercicioDos\obj\Debug\net8.0\ejercicioDos.AssemblyInfo.cs
+C:\Users\valen\OneDrive\Escritorio\programacion\ejercicioDos\ejercicioDos\obj\Debug\net8.0\ejercicioDos.csproj.CoreCompileInputs.cache
+C:\Users\valen\OneDrive\Escritorio\programacion\ejercicioDos\ejercicioDos\obj\Debug\net8.0\ejercicioDos.dll
+C:\Users\valen\OneDrive\Escritorio\programacion\ejercicioDos\ejercicioDos\obj\Debug\net8.0\refint\ejercicioDos.dll
+C:\Users\valen\OneDrive\Escritorio\programacion\ejercicioDos\ejercicioDos\obj\Debug\net8.0\ejercicioDos.pdb
+C:\Users\valen\OneDrive\Escritorio\programacion\ejercicioDos\ejercicioDos\obj\Debug\net8.0\ejercicioDos.genruntimeconfig.cache
+C:\Users\valen\OneDrive\Escritorio\programacion\ejercicioDos\ejercicioDos\obj\Debug\net8.0\ref\ejercicioDos.dll

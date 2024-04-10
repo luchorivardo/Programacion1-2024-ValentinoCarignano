@@ -1,0 +1,30 @@
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-ValentinoCarignano-2024\ejercicioTres\ejercicioTres\bin\Debug\net8.0\ejercicioTres.exe
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-ValentinoCarignano-2024\ejercicioTres\ejercicioTres\bin\Debug\net8.0\ejercicioTres.deps.json
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-ValentinoCarignano-2024\ejercicioTres\ejercicioTres\bin\Debug\net8.0\ejercicioTres.runtimeconfig.json
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-ValentinoCarignano-2024\ejercicioTres\ejercicioTres\bin\Debug\net8.0\ejercicioTres.dll
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-ValentinoCarignano-2024\ejercicioTres\ejercicioTres\bin\Debug\net8.0\ejercicioTres.pdb
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-ValentinoCarignano-2024\ejercicioTres\ejercicioTres\obj\Debug\net8.0\ejercicioTres.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-ValentinoCarignano-2024\ejercicioTres\ejercicioTres\obj\Debug\net8.0\ejercicioTres.AssemblyInfoInputs.cache
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-ValentinoCarignano-2024\ejercicioTres\ejercicioTres\obj\Debug\net8.0\ejercicioTres.AssemblyInfo.cs
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-ValentinoCarignano-2024\ejercicioTres\ejercicioTres\obj\Debug\net8.0\ejercicioTres.csproj.CoreCompileInputs.cache
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-ValentinoCarignano-2024\ejercicioTres\ejercicioTres\obj\Debug\net8.0\ejercicioTres.sourcelink.json
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-ValentinoCarignano-2024\ejercicioTres\ejercicioTres\obj\Debug\net8.0\ejercicioTres.dll
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-ValentinoCarignano-2024\ejercicioTres\ejercicioTres\obj\Debug\net8.0\refint\ejercicioTres.dll
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-ValentinoCarignano-2024\ejercicioTres\ejercicioTres\obj\Debug\net8.0\ejercicioTres.pdb
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-ValentinoCarignano-2024\ejercicioTres\ejercicioTres\obj\Debug\net8.0\ejercicioTres.genruntimeconfig.cache
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-ValentinoCarignano-2024\ejercicioTres\ejercicioTres\obj\Debug\net8.0\ref\ejercicioTres.dll
+D:\Documentos\GitHub\Programacion1-ValentinoCarignano-2024\Ejercicios Pseudocodigo a C#\ejercicioTres\ejercicioTres\bin\Debug\net8.0\ejercicioTres.exe
+D:\Documentos\GitHub\Programacion1-ValentinoCarignano-2024\Ejercicios Pseudocodigo a C#\ejercicioTres\ejercicioTres\bin\Debug\net8.0\ejercicioTres.deps.json
+D:\Documentos\GitHub\Programacion1-ValentinoCarignano-2024\Ejercicios Pseudocodigo a C#\ejercicioTres\ejercicioTres\bin\Debug\net8.0\ejercicioTres.runtimeconfig.json
+D:\Documentos\GitHub\Programacion1-ValentinoCarignano-2024\Ejercicios Pseudocodigo a C#\ejercicioTres\ejercicioTres\bin\Debug\net8.0\ejercicioTres.dll
+D:\Documentos\GitHub\Programacion1-ValentinoCarignano-2024\Ejercicios Pseudocodigo a C#\ejercicioTres\ejercicioTres\bin\Debug\net8.0\ejercicioTres.pdb
+D:\Documentos\GitHub\Programacion1-ValentinoCarignano-2024\Ejercicios Pseudocodigo a C#\ejercicioTres\ejercicioTres\obj\Debug\net8.0\ejercicioTres.GeneratedMSBuildEditorConfig.editorconfig
+D:\Documentos\GitHub\Programacion1-ValentinoCarignano-2024\Ejercicios Pseudocodigo a C#\ejercicioTres\ejercicioTres\obj\Debug\net8.0\ejercicioTres.AssemblyInfoInputs.cache
+D:\Documentos\GitHub\Programacion1-ValentinoCarignano-2024\Ejercicios Pseudocodigo a C#\ejercicioTres\ejercicioTres\obj\Debug\net8.0\ejercicioTres.AssemblyInfo.cs
+D:\Documentos\GitHub\Programacion1-ValentinoCarignano-2024\Ejercicios Pseudocodigo a C#\ejercicioTres\ejercicioTres\obj\Debug\net8.0\ejercicioTres.csproj.CoreCompileInputs.cache
+D:\Documentos\GitHub\Programacion1-ValentinoCarignano-2024\Ejercicios Pseudocodigo a C#\ejercicioTres\ejercicioTres\obj\Debug\net8.0\ejercicioTres.sourcelink.json
+D:\Documentos\GitHub\Programacion1-ValentinoCarignano-2024\Ejercicios Pseudocodigo a C#\ejercicioTres\ejercicioTres\obj\Debug\net8.0\ejercicioTres.dll
+D:\Documentos\GitHub\Programacion1-ValentinoCarignano-2024\Ejercicios Pseudocodigo a C#\ejercicioTres\ejercicioTres\obj\Debug\net8.0\refint\ejercicioTres.dll
+D:\Documentos\GitHub\Programacion1-ValentinoCarignano-2024\Ejercicios Pseudocodigo a C#\ejercicioTres\ejercicioTres\obj\Debug\net8.0\ejercicioTres.pdb
+D:\Documentos\GitHub\Programacion1-ValentinoCarignano-2024\Ejercicios Pseudocodigo a C#\ejercicioTres\ejercicioTres\obj\Debug\net8.0\ejercicioTres.genruntimeconfig.cache
+D:\Documentos\GitHub\Programacion1-ValentinoCarignano-2024\Ejercicios Pseudocodigo a C#\ejercicioTres\ejercicioTres\obj\Debug\net8.0\ref\ejercicioTres.dll

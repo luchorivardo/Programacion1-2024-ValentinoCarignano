@@ -1,0 +1,29 @@
+C:\Users\valen\OneDrive\Escritorio\programacion\ejercicioUno\ejercicioUno\bin\Debug\net8.0\ejercicioUno.exe
+C:\Users\valen\OneDrive\Escritorio\programacion\ejercicioUno\ejercicioUno\bin\Debug\net8.0\ejercicioUno.deps.json
+C:\Users\valen\OneDrive\Escritorio\programacion\ejercicioUno\ejercicioUno\bin\Debug\net8.0\ejercicioUno.runtimeconfig.json
+C:\Users\valen\OneDrive\Escritorio\programacion\ejercicioUno\ejercicioUno\bin\Debug\net8.0\ejercicioUno.dll
+C:\Users\valen\OneDrive\Escritorio\programacion\ejercicioUno\ejercicioUno\bin\Debug\net8.0\ejercicioUno.pdb
+C:\Users\valen\OneDrive\Escritorio\programacion\ejercicioUno\ejercicioUno\obj\Debug\net8.0\ejercicioUno.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\valen\OneDrive\Escritorio\programacion\ejercicioUno\ejercicioUno\obj\Debug\net8.0\ejercicioUno.AssemblyInfoInputs.cache
+C:\Users\valen\OneDrive\Escritorio\programacion\ejercicioUno\ejercicioUno\obj\Debug\net8.0\ejercicioUno.AssemblyInfo.cs
+C:\Users\valen\OneDrive\Escritorio\programacion\ejercicioUno\ejercicioUno\obj\Debug\net8.0\ejercicioUno.csproj.CoreCompileInputs.cache
+C:\Users\valen\OneDrive\Escritorio\programacion\ejercicioUno\ejercicioUno\obj\Debug\net8.0\ejercicioUno.dll
+C:\Users\valen\OneDrive\Escritorio\programacion\ejercicioUno\ejercicioUno\obj\Debug\net8.0\refint\ejercicioUno.dll
+C:\Users\valen\OneDrive\Escritorio\programacion\ejercicioUno\ejercicioUno\obj\Debug\net8.0\ejercicioUno.pdb
+C:\Users\valen\OneDrive\Escritorio\programacion\ejercicioUno\ejercicioUno\obj\Debug\net8.0\ejercicioUno.genruntimeconfig.cache
+C:\Users\valen\OneDrive\Escritorio\programacion\ejercicioUno\ejercicioUno\obj\Debug\net8.0\ref\ejercicioUno.dll
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-ValentinoCarignano-2024\Ejercicios Pseudocodigo a C#\ejercicioUno\ejercicioUno\bin\Debug\net8.0\ejercicioUno.exe
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-ValentinoCarignano-2024\Ejercicios Pseudocodigo a C#\ejercicioUno\ejercicioUno\bin\Debug\net8.0\ejercicioUno.deps.json
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-ValentinoCarignano-2024\Ejercicios Pseudocodigo a C#\ejercicioUno\ejercicioUno\bin\Debug\net8.0\ejercicioUno.runtimeconfig.json
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-ValentinoCarignano-2024\Ejercicios Pseudocodigo a C#\ejercicioUno\ejercicioUno\bin\Debug\net8.0\ejercicioUno.dll
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-ValentinoCarignano-2024\Ejercicios Pseudocodigo a C#\ejercicioUno\ejercicioUno\bin\Debug\net8.0\ejercicioUno.pdb
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-ValentinoCarignano-2024\Ejercicios Pseudocodigo a C#\ejercicioUno\ejercicioUno\obj\Debug\net8.0\ejercicioUno.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-ValentinoCarignano-2024\Ejercicios Pseudocodigo a C#\ejercicioUno\ejercicioUno\obj\Debug\net8.0\ejercicioUno.AssemblyInfoInputs.cache
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-ValentinoCarignano-2024\Ejercicios Pseudocodigo a C#\ejercicioUno\ejercicioUno\obj\Debug\net8.0\ejercicioUno.AssemblyInfo.cs
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-ValentinoCarignano-2024\Ejercicios Pseudocodigo a C#\ejercicioUno\ejercicioUno\obj\Debug\net8.0\ejercicioUno.csproj.CoreCompileInputs.cache
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-ValentinoCarignano-2024\Ejercicios Pseudocodigo a C#\ejercicioUno\ejercicioUno\obj\Debug\net8.0\ejercicioUno.sourcelink.json
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-ValentinoCarignano-2024\Ejercicios Pseudocodigo a C#\ejercicioUno\ejercicioUno\obj\Debug\net8.0\ejercicioUno.dll
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-ValentinoCarignano-2024\Ejercicios Pseudocodigo a C#\ejercicioUno\ejercicioUno\obj\Debug\net8.0\refint\ejercicioUno.dll
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-ValentinoCarignano-2024\Ejercicios Pseudocodigo a C#\ejercicioUno\ejercicioUno\obj\Debug\net8.0\ejercicioUno.pdb
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-ValentinoCarignano-2024\Ejercicios Pseudocodigo a C#\ejercicioUno\ejercicioUno\obj\Debug\net8.0\ejercicioUno.genruntimeconfig.cache
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-ValentinoCarignano-2024\Ejercicios Pseudocodigo a C#\ejercicioUno\ejercicioUno\obj\Debug\net8.0\ref\ejercicioUno.dll

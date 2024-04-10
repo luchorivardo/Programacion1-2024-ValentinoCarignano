@@ -1,0 +1,15 @@
+D:\Documentos\GitHub\Programacion1-ValentinoCarignano-2024\ejercicioOcho\ejercicioOcho\bin\Debug\net8.0\ejercicioOcho.exe
+D:\Documentos\GitHub\Programacion1-ValentinoCarignano-2024\ejercicioOcho\ejercicioOcho\bin\Debug\net8.0\ejercicioOcho.deps.json
+D:\Documentos\GitHub\Programacion1-ValentinoCarignano-2024\ejercicioOcho\ejercicioOcho\bin\Debug\net8.0\ejercicioOcho.runtimeconfig.json
+D:\Documentos\GitHub\Programacion1-ValentinoCarignano-2024\ejercicioOcho\ejercicioOcho\bin\Debug\net8.0\ejercicioOcho.dll
+D:\Documentos\GitHub\Programacion1-ValentinoCarignano-2024\ejercicioOcho\ejercicioOcho\bin\Debug\net8.0\ejercicioOcho.pdb
+D:\Documentos\GitHub\Programacion1-ValentinoCarignano-2024\ejercicioOcho\ejercicioOcho\obj\Debug\net8.0\ejercicioOcho.GeneratedMSBuildEditorConfig.editorconfig
+D:\Documentos\GitHub\Programacion1-ValentinoCarignano-2024\ejercicioOcho\ejercicioOcho\obj\Debug\net8.0\ejercicioOcho.AssemblyInfoInputs.cache
+D:\Documentos\GitHub\Programacion1-ValentinoCarignano-2024\ejercicioOcho\ejercicioOcho\obj\Debug\net8.0\ejercicioOcho.AssemblyInfo.cs
+D:\Documentos\GitHub\Programacion1-ValentinoCarignano-2024\ejercicioOcho\ejercicioOcho\obj\Debug\net8.0\ejercicioOcho.csproj.CoreCompileInputs.cache
+D:\Documentos\GitHub\Programacion1-ValentinoCarignano-2024\ejercicioOcho\ejercicioOcho\obj\Debug\net8.0\ejercicioOcho.sourcelink.json
+D:\Documentos\GitHub\Programacion1-ValentinoCarignano-2024\ejercicioOcho\ejercicioOcho\obj\Debug\net8.0\ejercicioOcho.dll
+D:\Documentos\GitHub\Programacion1-ValentinoCarignano-2024\ejercicioOcho\ejercicioOcho\obj\Debug\net8.0\refint\ejercicioOcho.dll
+D:\Documentos\GitHub\Programacion1-ValentinoCarignano-2024\ejercicioOcho\ejercicioOcho\obj\Debug\net8.0\ejercicioOcho.pdb
+D:\Documentos\GitHub\Programacion1-ValentinoCarignano-2024\ejercicioOcho\ejercicioOcho\obj\Debug\net8.0\ejercicioOcho.genruntimeconfig.cache
+D:\Documentos\GitHub\Programacion1-ValentinoCarignano-2024\ejercicioOcho\ejercicioOcho\obj\Debug\net8.0\ref\ejercicioOcho.dll

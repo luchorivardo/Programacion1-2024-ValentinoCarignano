@@ -1,0 +1,15 @@
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-ValentinoCarignano-2024\ejercicioCinco\ejercicioCinco\bin\Debug\net8.0\ejercicioCinco.exe
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-ValentinoCarignano-2024\ejercicioCinco\ejercicioCinco\bin\Debug\net8.0\ejercicioCinco.deps.json
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-ValentinoCarignano-2024\ejercicioCinco\ejercicioCinco\bin\Debug\net8.0\ejercicioCinco.runtimeconfig.json
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-ValentinoCarignano-2024\ejercicioCinco\ejercicioCinco\bin\Debug\net8.0\ejercicioCinco.dll
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-ValentinoCarignano-2024\ejercicioCinco\ejercicioCinco\bin\Debug\net8.0\ejercicioCinco.pdb
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-ValentinoCarignano-2024\ejercicioCinco\ejercicioCinco\obj\Debug\net8.0\ejercicioCinco.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-ValentinoCarignano-2024\ejercicioCinco\ejercicioCinco\obj\Debug\net8.0\ejercicioCinco.AssemblyInfoInputs.cache
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-ValentinoCarignano-2024\ejercicioCinco\ejercicioCinco\obj\Debug\net8.0\ejercicioCinco.AssemblyInfo.cs
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-ValentinoCarignano-2024\ejercicioCinco\ejercicioCinco\obj\Debug\net8.0\ejercicioCinco.csproj.CoreCompileInputs.cache
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-ValentinoCarignano-2024\ejercicioCinco\ejercicioCinco\obj\Debug\net8.0\ejercicioCinco.sourcelink.json
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-ValentinoCarignano-2024\ejercicioCinco\ejercicioCinco\obj\Debug\net8.0\ejercicioCinco.dll
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-ValentinoCarignano-2024\ejercicioCinco\ejercicioCinco\obj\Debug\net8.0\refint\ejercicioCinco.dll
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-ValentinoCarignano-2024\ejercicioCinco\ejercicioCinco\obj\Debug\net8.0\ejercicioCinco.pdb
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-ValentinoCarignano-2024\ejercicioCinco\ejercicioCinco\obj\Debug\net8.0\ejercicioCinco.genruntimeconfig.cache
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-ValentinoCarignano-2024\ejercicioCinco\ejercicioCinco\obj\Debug\net8.0\ref\ejercicioCinco.dll

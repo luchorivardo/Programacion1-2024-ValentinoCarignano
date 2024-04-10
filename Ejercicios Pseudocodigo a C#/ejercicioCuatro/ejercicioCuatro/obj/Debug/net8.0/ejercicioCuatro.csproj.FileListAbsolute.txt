@@ -1,0 +1,15 @@
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-ValentinoCarignano-2024\ejercicioCuatro\ejercicioCuatro\bin\Debug\net8.0\ejercicioCuatro.exe
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-ValentinoCarignano-2024\ejercicioCuatro\ejercicioCuatro\bin\Debug\net8.0\ejercicioCuatro.deps.json
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-ValentinoCarignano-2024\ejercicioCuatro\ejercicioCuatro\bin\Debug\net8.0\ejercicioCuatro.runtimeconfig.json
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-ValentinoCarignano-2024\ejercicioCuatro\ejercicioCuatro\bin\Debug\net8.0\ejercicioCuatro.dll
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-ValentinoCarignano-2024\ejercicioCuatro\ejercicioCuatro\bin\Debug\net8.0\ejercicioCuatro.pdb
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-ValentinoCarignano-2024\ejercicioCuatro\ejercicioCuatro\obj\Debug\net8.0\ejercicioCuatro.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-ValentinoCarignano-2024\ejercicioCuatro\ejercicioCuatro\obj\Debug\net8.0\ejercicioCuatro.AssemblyInfoInputs.cache
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-ValentinoCarignano-2024\ejercicioCuatro\ejercicioCuatro\obj\Debug\net8.0\ejercicioCuatro.AssemblyInfo.cs
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-ValentinoCarignano-2024\ejercicioCuatro\ejercicioCuatro\obj\Debug\net8.0\ejercicioCuatro.csproj.CoreCompileInputs.cache
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-ValentinoCarignano-2024\ejercicioCuatro\ejercicioCuatro\obj\Debug\net8.0\ejercicioCuatro.sourcelink.json
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-ValentinoCarignano-2024\ejercicioCuatro\ejercicioCuatro\obj\Debug\net8.0\ejercicioCuatro.dll
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-ValentinoCarignano-2024\ejercicioCuatro\ejercicioCuatro\obj\Debug\net8.0\refint\ejercicioCuatro.dll
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-ValentinoCarignano-2024\ejercicioCuatro\ejercicioCuatro\obj\Debug\net8.0\ejercicioCuatro.pdb
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-ValentinoCarignano-2024\ejercicioCuatro\ejercicioCuatro\obj\Debug\net8.0\ejercicioCuatro.genruntimeconfig.cache
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-ValentinoCarignano-2024\ejercicioCuatro\ejercicioCuatro\obj\Debug\net8.0\ref\ejercicioCuatro.dll

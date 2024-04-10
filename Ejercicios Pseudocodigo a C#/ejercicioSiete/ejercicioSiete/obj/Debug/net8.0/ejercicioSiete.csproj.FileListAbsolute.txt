@@ -1,0 +1,15 @@
+D:\Documentos\GitHub\Programacion1-ValentinoCarignano-2024\ejercicioSiete\ejercicioSiete\bin\Debug\net8.0\ejercicioSiete.exe
+D:\Documentos\GitHub\Programacion1-ValentinoCarignano-2024\ejercicioSiete\ejercicioSiete\bin\Debug\net8.0\ejercicioSiete.deps.json
+D:\Documentos\GitHub\Programacion1-ValentinoCarignano-2024\ejercicioSiete\ejercicioSiete\bin\Debug\net8.0\ejercicioSiete.runtimeconfig.json
+D:\Documentos\GitHub\Programacion1-ValentinoCarignano-2024\ejercicioSiete\ejercicioSiete\bin\Debug\net8.0\ejercicioSiete.dll
+D:\Documentos\GitHub\Programacion1-ValentinoCarignano-2024\ejercicioSiete\ejercicioSiete\bin\Debug\net8.0\ejercicioSiete.pdb
+D:\Documentos\GitHub\Programacion1-ValentinoCarignano-2024\ejercicioSiete\ejercicioSiete\obj\Debug\net8.0\ejercicioSiete.GeneratedMSBuildEditorConfig.editorconfig
+D:\Documentos\GitHub\Programacion1-ValentinoCarignano-2024\ejercicioSiete\ejercicioSiete\obj\Debug\net8.0\ejercicioSiete.AssemblyInfoInputs.cache
+D:\Documentos\GitHub\Programacion1-ValentinoCarignano-2024\ejercicioSiete\ejercicioSiete\obj\Debug\net8.0\ejercicioSiete.AssemblyInfo.cs
+D:\Documentos\GitHub\Programacion1-ValentinoCarignano-2024\ejercicioSiete\ejercicioSiete\obj\Debug\net8.0\ejercicioSiete.csproj.CoreCompileInputs.cache
+D:\Documentos\GitHub\Programacion1-ValentinoCarignano-2024\ejercicioSiete\ejercicioSiete\obj\Debug\net8.0\ejercicioSiete.sourcelink.json
+D:\Documentos\GitHub\Programacion1-ValentinoCarignano-2024\ejercicioSiete\ejercicioSiete\obj\Debug\net8.0\ejercicioSiete.dll
+D:\Documentos\GitHub\Programacion1-ValentinoCarignano-2024\ejercicioSiete\ejercicioSiete\obj\Debug\net8.0\refint\ejercicioSiete.dll
+D:\Documentos\GitHub\Programacion1-ValentinoCarignano-2024\ejercicioSiete\ejercicioSiete\obj\Debug\net8.0\ejercicioSiete.pdb
+D:\Documentos\GitHub\Programacion1-ValentinoCarignano-2024\ejercicioSiete\ejercicioSiete\obj\Debug\net8.0\ejercicioSiete.genruntimeconfig.cache
+D:\Documentos\GitHub\Programacion1-ValentinoCarignano-2024\ejercicioSiete\ejercicioSiete\obj\Debug\net8.0\ref\ejercicioSiete.dll
