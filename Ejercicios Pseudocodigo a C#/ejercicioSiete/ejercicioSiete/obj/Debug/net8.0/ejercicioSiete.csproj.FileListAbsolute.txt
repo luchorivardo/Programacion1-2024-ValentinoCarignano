@@ -13,3 +13,18 @@ D:\Documentos\GitHub\Programacion1-ValentinoCarignano-2024\ejercicioSiete\ejerci
 D:\Documentos\GitHub\Programacion1-ValentinoCarignano-2024\ejercicioSiete\ejercicioSiete\obj\Debug\net8.0\ejercicioSiete.pdb
 D:\Documentos\GitHub\Programacion1-ValentinoCarignano-2024\ejercicioSiete\ejercicioSiete\obj\Debug\net8.0\ejercicioSiete.genruntimeconfig.cache
 D:\Documentos\GitHub\Programacion1-ValentinoCarignano-2024\ejercicioSiete\ejercicioSiete\obj\Debug\net8.0\ref\ejercicioSiete.dll
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-2024-ValentinoCarignano\Ejercicios Pseudocodigo a C#\ejercicioSiete\ejercicioSiete\bin\Debug\net8.0\ejercicioSiete.exe
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-2024-ValentinoCarignano\Ejercicios Pseudocodigo a C#\ejercicioSiete\ejercicioSiete\bin\Debug\net8.0\ejercicioSiete.deps.json
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-2024-ValentinoCarignano\Ejercicios Pseudocodigo a C#\ejercicioSiete\ejercicioSiete\bin\Debug\net8.0\ejercicioSiete.runtimeconfig.json
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-2024-ValentinoCarignano\Ejercicios Pseudocodigo a C#\ejercicioSiete\ejercicioSiete\bin\Debug\net8.0\ejercicioSiete.dll
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-2024-ValentinoCarignano\Ejercicios Pseudocodigo a C#\ejercicioSiete\ejercicioSiete\bin\Debug\net8.0\ejercicioSiete.pdb
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-2024-ValentinoCarignano\Ejercicios Pseudocodigo a C#\ejercicioSiete\ejercicioSiete\obj\Debug\net8.0\ejercicioSiete.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-2024-ValentinoCarignano\Ejercicios Pseudocodigo a C#\ejercicioSiete\ejercicioSiete\obj\Debug\net8.0\ejercicioSiete.AssemblyInfoInputs.cache
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-2024-ValentinoCarignano\Ejercicios Pseudocodigo a C#\ejercicioSiete\ejercicioSiete\obj\Debug\net8.0\ejercicioSiete.AssemblyInfo.cs
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-2024-ValentinoCarignano\Ejercicios Pseudocodigo a C#\ejercicioSiete\ejercicioSiete\obj\Debug\net8.0\ejercicioSiete.csproj.CoreCompileInputs.cache
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-2024-ValentinoCarignano\Ejercicios Pseudocodigo a C#\ejercicioSiete\ejercicioSiete\obj\Debug\net8.0\ejercicioSiete.sourcelink.json
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-2024-ValentinoCarignano\Ejercicios Pseudocodigo a C#\ejercicioSiete\ejercicioSiete\obj\Debug\net8.0\ejercicioSiete.dll
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-2024-ValentinoCarignano\Ejercicios Pseudocodigo a C#\ejercicioSiete\ejercicioSiete\obj\Debug\net8.0\refint\ejercicioSiete.dll
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-2024-ValentinoCarignano\Ejercicios Pseudocodigo a C#\ejercicioSiete\ejercicioSiete\obj\Debug\net8.0\ejercicioSiete.pdb
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-2024-ValentinoCarignano\Ejercicios Pseudocodigo a C#\ejercicioSiete\ejercicioSiete\obj\Debug\net8.0\ejercicioSiete.genruntimeconfig.cache
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-2024-ValentinoCarignano\Ejercicios Pseudocodigo a C#\ejercicioSiete\ejercicioSiete\obj\Debug\net8.0\ref\ejercicioSiete.dll

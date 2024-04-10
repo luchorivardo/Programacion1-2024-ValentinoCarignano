@@ -17,9 +17,13 @@ else
         {
             Console.WriteLine("El mayor de los dos numeros es: " + number1);
         }
-        else
+        else if (number1 < number2)
         {
             Console.WriteLine("El mayor de los dos numeros es: " + number2);
+        }
+        else
+        {
+            Console.WriteLine("Los numeros son iguales.");
         }
     }
 }

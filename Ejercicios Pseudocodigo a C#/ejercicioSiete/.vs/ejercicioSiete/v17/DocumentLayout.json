@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Documentos\\GitHub\\Programacion1-ValentinoCarignano-2024\\ejercicioSiete\\",
+  "WorkspaceRootPath": "C:\\Users\\valen\\OneDrive\\Documents\\GitHub\\Programacion1-2024-ValentinoCarignano\\Ejercicios Pseudocodigo a C#\\ejercicioSiete\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{284B17D6-B892-4EA9-A6E6-4CB2E6AA5AF0}|ejercicioSiete\\ejercicioSiete.csproj|d:\\documentos\\github\\programacion1-valentinocarignano-2024\\ejerciciosiete\\ejerciciosiete\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{284B17D6-B892-4EA9-A6E6-4CB2E6AA5AF0}|ejercicioSiete\\ejercicioSiete.csproj|c:\\users\\valen\\onedrive\\documents\\github\\programacion1-2024-valentinocarignano\\ejercicios pseudocodigo a c#\\ejerciciosiete\\ejerciciosiete\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{284B17D6-B892-4EA9-A6E6-4CB2E6AA5AF0}|ejercicioSiete\\ejercicioSiete.csproj|solutionrelative:ejerciciosiete\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -14,21 +14,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Documentos\\GitHub\\Programacion1-ValentinoCarignano-2024\\ejercicioSiete\\ejercicioSiete\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\valen\\OneDrive\\Documents\\GitHub\\Programacion1-2024-ValentinoCarignano\\Ejercicios Pseudocodigo a C#\\ejercicioSiete\\ejercicioSiete\\Program.cs",
               "RelativeDocumentMoniker": "ejercicioSiete\\Program.cs",
-              "ToolTip": "D:\\Documentos\\GitHub\\Programacion1-ValentinoCarignano-2024\\ejercicioSiete\\ejercicioSiete\\Program.cs",
+              "ToolTip": "C:\\Users\\valen\\OneDrive\\Documents\\GitHub\\Programacion1-2024-ValentinoCarignano\\Ejercicios Pseudocodigo a C#\\ejercicioSiete\\ejercicioSiete\\Program.cs",
               "RelativeToolTip": "ejercicioSiete\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAABkAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-09T22:28:46.822Z",
               "EditorCaption": ""

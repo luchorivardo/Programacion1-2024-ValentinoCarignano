@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Documentos\\GitHub\\Programacion1-ValentinoCarignano-2024\\ejercicioSiete\\ejercicioSiete\\ejercicioSiete.csproj": {}
+    "C:\\Users\\valen\\OneDrive\\Documents\\GitHub\\Programacion1-2024-ValentinoCarignano\\Ejercicios Pseudocodigo a C#\\ejercicioSiete\\ejercicioSiete\\ejercicioSiete.csproj": {}
   },
   "projects": {
-    "D:\\Documentos\\GitHub\\Programacion1-ValentinoCarignano-2024\\ejercicioSiete\\ejercicioSiete\\ejercicioSiete.csproj": {
+    "C:\\Users\\valen\\OneDrive\\Documents\\GitHub\\Programacion1-2024-ValentinoCarignano\\Ejercicios Pseudocodigo a C#\\ejercicioSiete\\ejercicioSiete\\ejercicioSiete.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Documentos\\GitHub\\Programacion1-ValentinoCarignano-2024\\ejercicioSiete\\ejercicioSiete\\ejercicioSiete.csproj",
+        "projectUniqueName": "C:\\Users\\valen\\OneDrive\\Documents\\GitHub\\Programacion1-2024-ValentinoCarignano\\Ejercicios Pseudocodigo a C#\\ejercicioSiete\\ejercicioSiete\\ejercicioSiete.csproj",
         "projectName": "ejercicioSiete",
-        "projectPath": "D:\\Documentos\\GitHub\\Programacion1-ValentinoCarignano-2024\\ejercicioSiete\\ejercicioSiete\\ejercicioSiete.csproj",
-        "packagesPath": "C:\\Users\\Valentino\\.nuget\\packages\\",
-        "outputPath": "D:\\Documentos\\GitHub\\Programacion1-ValentinoCarignano-2024\\ejercicioSiete\\ejercicioSiete\\obj\\",
+        "projectPath": "C:\\Users\\valen\\OneDrive\\Documents\\GitHub\\Programacion1-2024-ValentinoCarignano\\Ejercicios Pseudocodigo a C#\\ejercicioSiete\\ejercicioSiete\\ejercicioSiete.csproj",
+        "packagesPath": "C:\\Users\\valen\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\valen\\OneDrive\\Documents\\GitHub\\Programacion1-2024-ValentinoCarignano\\Ejercicios Pseudocodigo a C#\\ejercicioSiete\\ejercicioSiete\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Valentino\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\valen\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -60,7 +60,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
