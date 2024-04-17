@@ -1,7 +1,0 @@
-D:\Documentos\GitHub\Programacion1-2024-ValentinoCarignano\Estructuras Repetitivas\FOR\ejerciciosFOR\ejerciciosFOR\bin\Debug\ejerciciosFOR.exe.config
-D:\Documentos\GitHub\Programacion1-2024-ValentinoCarignano\Estructuras Repetitivas\FOR\ejerciciosFOR\ejerciciosFOR\bin\Debug\ejerciciosFOR.exe
-D:\Documentos\GitHub\Programacion1-2024-ValentinoCarignano\Estructuras Repetitivas\FOR\ejerciciosFOR\ejerciciosFOR\bin\Debug\ejerciciosFOR.pdb
-D:\Documentos\GitHub\Programacion1-2024-ValentinoCarignano\Estructuras Repetitivas\FOR\ejerciciosFOR\ejerciciosFOR\obj\Debug\ejerciciosFOR.csproj.AssemblyReference.cache
-D:\Documentos\GitHub\Programacion1-2024-ValentinoCarignano\Estructuras Repetitivas\FOR\ejerciciosFOR\ejerciciosFOR\obj\Debug\ejerciciosFOR.csproj.CoreCompileInputs.cache
-D:\Documentos\GitHub\Programacion1-2024-ValentinoCarignano\Estructuras Repetitivas\FOR\ejerciciosFOR\ejerciciosFOR\obj\Debug\ejerciciosFOR.exe
-D:\Documentos\GitHub\Programacion1-2024-ValentinoCarignano\Estructuras Repetitivas\FOR\ejerciciosFOR\ejerciciosFOR\obj\Debug\ejerciciosFOR.pdb
