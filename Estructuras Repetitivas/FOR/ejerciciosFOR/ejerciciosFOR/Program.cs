@@ -39,7 +39,7 @@ namespace ejerciciosFOR
             for (int i = 1; i <= 8; i++)
             {
                 Console.Write($"Nota {i}: ");
-                if (!float.TryParse(Console.ReadLine()?.Replace(".", ","), out nota))
+                if (!float.TryParse(Console.ReadLine()?.Replace(".", ","), out nota) ||  nota < 0)
                 {
                     Console.WriteLine("El numero ingresado no es valido.");
                     i--;
@@ -57,12 +57,11 @@ namespace ejerciciosFOR
             float costoUnitario;
             int cantidadComprada;
             float resultado = 0;
-            float total = 0;
 
             for (int i = 1; i <= 5; i++)
             {
                 Console.Write($"Compra {i}. Costo unitario: ");
-                if (!float.TryParse(Console.ReadLine()?.Replace(".", ","), out costoUnitario))
+                if (!float.TryParse(Console.ReadLine()?.Replace(".", ","), out costoUnitario) || costoUnitario <= 0)
                 {
                     Console.WriteLine("El numero ingresado no es valido.");
                     i--;
@@ -70,19 +69,18 @@ namespace ejerciciosFOR
                 else
                 {
                     Console.Write($"Compra {i}. Cantidad comprada: ");
-                    if (!int.TryParse(Console.ReadLine(), out cantidadComprada))
+                    if (!int.TryParse(Console.ReadLine(), out cantidadComprada) || cantidadComprada <= 0)
                     {
                         Console.WriteLine("El numero ingresado no es valido.");
                         i--;
                     }
                     else
                     {
-                        resultado = costoUnitario * cantidadComprada;
-                        total += resultado;
+                        resultado += costoUnitario * cantidadComprada;
                     }
                 }
             }
-            Console.WriteLine($"El total de las 5 compras es: {total}");*/
+            Console.WriteLine($"El total de las 5 compras es: {resultado}");*/
 
             //Ejercicio 4.
             /*float numero, mayor = 0;
@@ -122,25 +120,34 @@ namespace ejerciciosFOR
             {
                 Console.Write($"Entrada {i}. Nombre del cliente: ");
                 nombreCliente = Console.ReadLine();
-                Console.Write($"Compra {i}. Cantidad comprada: ");
-                if (!float.TryParse(Console.ReadLine()?.Replace(".", ","), out totalGastado))
+
+                if (string.IsNullOrWhiteSpace(nombreCliente))
                 {
-                    Console.WriteLine("El numero ingresado no es valido.");
+                    Console.WriteLine("El nombre ingresado no es valido.");
                     i--;
                 }
                 else
                 {
-                    if (i == 1)
+                    Console.Write($"Compra {i}. Cantidad comprada: ");
+                    if (!float.TryParse(Console.ReadLine()?.Replace(".", ","), out totalGastado) || totalGastado < 0)
                     {
-                        gastoMaximo = totalGastado;
-                        nombreClienteMax = nombreCliente;
+                        Console.WriteLine("El numero ingresado no es valido.");
+                        i--;
                     }
-                    else if (totalGastado > gastoMaximo)
+                    else
                     {
-                        gastoMaximo = totalGastado;
-                        nombreClienteMax = nombreCliente;
+                        if (i == 1)
+                        {
+                            gastoMaximo = totalGastado;
+                            nombreClienteMax = nombreCliente;
+                        }
+                        else if (totalGastado > gastoMaximo)
+                        {
+                            gastoMaximo = totalGastado;
+                            nombreClienteMax = nombreCliente;
+                        }
                     }
-                }
+                }   
             }
             Console.WriteLine($"El cliente {nombreClienteMax} fue quien mas gasto, con un total de: {gastoMaximo}");*/
 
@@ -172,7 +179,7 @@ namespace ejerciciosFOR
             }
             else
             {
-                for (int i = 0; i <= n; i++)
+                for (int i = 0; i <= n; i += 2)
                 {
                     if (i % 2 == 0)
                     {
@@ -180,7 +187,6 @@ namespace ejerciciosFOR
                     }
                 }
             }*/
-
         }
     }
 }
