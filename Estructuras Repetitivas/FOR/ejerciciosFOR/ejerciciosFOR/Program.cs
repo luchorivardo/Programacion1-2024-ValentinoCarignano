@@ -161,6 +161,26 @@ namespace ejerciciosFOR
                 }
                 Console.WriteLine($"El factorial de {n} es: {resultado}");
             }*/
+
+            //Ejercicio 7.
+            /*Console.Write("Ingrese un numero entero positivo: ");
+            int n;
+
+            if(!Int32.TryParse(Console.ReadLine(), out n) || n < 0)
+            {
+                Console.WriteLine("Error, numero invalido.");
+            }
+            else
+            {
+                for (int i = 0; i <= n; i++)
+                {
+                    if (i % 2 == 0)
+                    {
+                        Console.WriteLine(i);
+                    }
+                }
+            }*/
+
         }
     }
 }

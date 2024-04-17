@@ -5,3 +5,10 @@ D:\Documentos\GitHub\Programacion1-2024-ValentinoCarignano\Estructuras Repetitiv
 D:\Documentos\GitHub\Programacion1-2024-ValentinoCarignano\Estructuras Repetitivas\FOR\ejerciciosFOR\ejerciciosFOR\obj\Debug\ejerciciosFOR.csproj.CoreCompileInputs.cache
 D:\Documentos\GitHub\Programacion1-2024-ValentinoCarignano\Estructuras Repetitivas\FOR\ejerciciosFOR\ejerciciosFOR\obj\Debug\ejerciciosFOR.exe
 D:\Documentos\GitHub\Programacion1-2024-ValentinoCarignano\Estructuras Repetitivas\FOR\ejerciciosFOR\ejerciciosFOR\obj\Debug\ejerciciosFOR.pdb
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-2024-ValentinoCarignano\Estructuras Repetitivas\FOR\ejerciciosFOR\ejerciciosFOR\bin\Debug\ejerciciosFOR.exe.config
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-2024-ValentinoCarignano\Estructuras Repetitivas\FOR\ejerciciosFOR\ejerciciosFOR\bin\Debug\ejerciciosFOR.exe
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-2024-ValentinoCarignano\Estructuras Repetitivas\FOR\ejerciciosFOR\ejerciciosFOR\bin\Debug\ejerciciosFOR.pdb
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-2024-ValentinoCarignano\Estructuras Repetitivas\FOR\ejerciciosFOR\ejerciciosFOR\obj\Debug\ejerciciosFOR.csproj.AssemblyReference.cache
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-2024-ValentinoCarignano\Estructuras Repetitivas\FOR\ejerciciosFOR\ejerciciosFOR\obj\Debug\ejerciciosFOR.csproj.CoreCompileInputs.cache
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-2024-ValentinoCarignano\Estructuras Repetitivas\FOR\ejerciciosFOR\ejerciciosFOR\obj\Debug\ejerciciosFOR.exe
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-2024-ValentinoCarignano\Estructuras Repetitivas\FOR\ejerciciosFOR\ejerciciosFOR\obj\Debug\ejerciciosFOR.pdb
