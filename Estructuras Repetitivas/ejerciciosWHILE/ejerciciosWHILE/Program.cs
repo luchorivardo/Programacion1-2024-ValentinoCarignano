@@ -49,7 +49,7 @@ namespace ejerciciosWHILE
                 }
             }
             promedio = sumaValores / (cantidadValores - 1);
-            Console.WriteLine($"El promedio de los valores ingresados es: {promedio}");
+            Console.WriteLine($"El promedio de los valores ingresados es: {promedio}");*/
 
             //Ejercicio 3.
             /*Console.WriteLine("Ingrese un nombre (si no ingresa caracteres el programa terminara):");

@@ -11,7 +11,11 @@ namespace ejerciciosVARIADOS
         static void Main(string[] args)
         {
             //Ejercicio 1.
+            Console.WriteLine("Ingrese los detalles de los productos.");
+            for(int i = 10; i >= 1;  i++)
+            {
 
+            }
         }
     }
 }

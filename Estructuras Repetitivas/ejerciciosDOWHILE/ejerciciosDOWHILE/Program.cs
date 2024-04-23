@@ -67,7 +67,7 @@ namespace ejerciciosDOWHILE
             Console.WriteLine($"El promedio de los numero ingresados es: {promedio}");*/
 
             //Ejercicio 4.
-            /*Console.WriteLine("Ingrese numeros. El programa terminara cuando ingrese un numero mayor a 3 cifras.");
+            /*Console.WriteLine("Ingrese numeros para sumarlos. El programa terminara cuando ingrese un numero mayor a 3 cifras.");
             double numero;
             double suma = 0;
 
