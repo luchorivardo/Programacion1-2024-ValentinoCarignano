@@ -5,3 +5,10 @@ C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-2024-ValentinoCarignano\E
 C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-2024-ValentinoCarignano\Estructuras Repetitivas\ejerciciosWHILE\ejerciciosWHILE\obj\Debug\ejerciciosWHILE.csproj.CoreCompileInputs.cache
 C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-2024-ValentinoCarignano\Estructuras Repetitivas\ejerciciosWHILE\ejerciciosWHILE\obj\Debug\ejerciciosWHILE.exe
 C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-2024-ValentinoCarignano\Estructuras Repetitivas\ejerciciosWHILE\ejerciciosWHILE\obj\Debug\ejerciciosWHILE.pdb
+D:\Documentos\GitHub\Programacion1-2024-ValentinoCarignano\Estructuras Repetitivas\ejerciciosWHILE\ejerciciosWHILE\bin\Debug\ejerciciosWHILE.exe.config
+D:\Documentos\GitHub\Programacion1-2024-ValentinoCarignano\Estructuras Repetitivas\ejerciciosWHILE\ejerciciosWHILE\bin\Debug\ejerciciosWHILE.exe
+D:\Documentos\GitHub\Programacion1-2024-ValentinoCarignano\Estructuras Repetitivas\ejerciciosWHILE\ejerciciosWHILE\bin\Debug\ejerciciosWHILE.pdb
+D:\Documentos\GitHub\Programacion1-2024-ValentinoCarignano\Estructuras Repetitivas\ejerciciosWHILE\ejerciciosWHILE\obj\Debug\ejerciciosWHILE.csproj.AssemblyReference.cache
+D:\Documentos\GitHub\Programacion1-2024-ValentinoCarignano\Estructuras Repetitivas\ejerciciosWHILE\ejerciciosWHILE\obj\Debug\ejerciciosWHILE.csproj.CoreCompileInputs.cache
+D:\Documentos\GitHub\Programacion1-2024-ValentinoCarignano\Estructuras Repetitivas\ejerciciosWHILE\ejerciciosWHILE\obj\Debug\ejerciciosWHILE.exe
+D:\Documentos\GitHub\Programacion1-2024-ValentinoCarignano\Estructuras Repetitivas\ejerciciosWHILE\ejerciciosWHILE\obj\Debug\ejerciciosWHILE.pdb
