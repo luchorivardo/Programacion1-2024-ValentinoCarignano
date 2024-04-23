@@ -16,8 +16,9 @@ namespace ejerciciosWHILE
             float sumaValores = 0;
             while (valor != 0)
             {
-                if(!float.TryParse(Console.ReadLine(), out valor))
+                if(!float.TryParse(Console.ReadLine()?.Replace(".", ","), out valor) || valor < 0)
                 {
+                    Console.WriteLine(valor);
                     Console.WriteLine("El numero ingresado no es valido. Ingrese otro numero.");
                     valor = 1;
                 }
@@ -36,7 +37,7 @@ namespace ejerciciosWHILE
             float promedio = 0;
             while (valor != 0)
             {
-                if(!float.TryParse(Console.ReadLine(), out valor))
+                if(!float.TryParse(Console.ReadLine(), out valor)?.Replace(".", ",") || valor < 0)
                 {
                     Console.WriteLine("El numero ingresado no es valido. Ingrese otro numero.");
                     valor = 1;
@@ -48,7 +49,7 @@ namespace ejerciciosWHILE
                 }
             }
             promedio = sumaValores / (cantidadValores - 1);
-            Console.WriteLine($"El promedio de los valores ingresados es: {promedio}");*/
+            Console.WriteLine($"El promedio de los valores ingresados es: {promedio}");
 
             //Ejercicio 3.
             /*Console.WriteLine("Ingrese un nombre (si no ingresa caracteres el programa terminara):");
