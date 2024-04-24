@@ -1,0 +1,7 @@
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-2024-ValentinoCarignano\Estructuras Repetitivas\ejerciciosVARIADOS\ejerciciosVARIADOS\bin\Debug\ejerciciosVARIADOS.exe.config
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-2024-ValentinoCarignano\Estructuras Repetitivas\ejerciciosVARIADOS\ejerciciosVARIADOS\bin\Debug\ejerciciosVARIADOS.exe
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-2024-ValentinoCarignano\Estructuras Repetitivas\ejerciciosVARIADOS\ejerciciosVARIADOS\bin\Debug\ejerciciosVARIADOS.pdb
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-2024-ValentinoCarignano\Estructuras Repetitivas\ejerciciosVARIADOS\ejerciciosVARIADOS\obj\Debug\ejerciciosVARIADOS.csproj.AssemblyReference.cache
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-2024-ValentinoCarignano\Estructuras Repetitivas\ejerciciosVARIADOS\ejerciciosVARIADOS\obj\Debug\ejerciciosVARIADOS.csproj.CoreCompileInputs.cache
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-2024-ValentinoCarignano\Estructuras Repetitivas\ejerciciosVARIADOS\ejerciciosVARIADOS\obj\Debug\ejerciciosVARIADOS.exe
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-2024-ValentinoCarignano\Estructuras Repetitivas\ejerciciosVARIADOS\ejerciciosVARIADOS\obj\Debug\ejerciciosVARIADOS.pdb

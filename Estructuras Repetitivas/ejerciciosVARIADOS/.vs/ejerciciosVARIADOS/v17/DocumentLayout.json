@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Documentos\\GitHub\\Programacion1-2024-ValentinoCarignano\\Estructuras Repetitivas\\ejerciciosVARIADOS\\",
+  "WorkspaceRootPath": "C:\\Users\\valen\\OneDrive\\Documents\\GitHub\\Programacion1-2024-ValentinoCarignano\\Estructuras Repetitivas\\ejerciciosVARIADOS\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AC1DD6D4-F33B-4CD8-8AA6-B8BBBE882350}|ejerciciosVARIADOS\\ejerciciosVARIADOS.csproj|d:\\documentos\\github\\programacion1-2024-valentinocarignano\\estructuras repetitivas\\ejerciciosvariados\\ejerciciosvariados\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AC1DD6D4-F33B-4CD8-8AA6-B8BBBE882350}|ejerciciosVARIADOS\\ejerciciosVARIADOS.csproj|c:\\users\\valen\\onedrive\\documents\\github\\programacion1-2024-valentinocarignano\\estructuras repetitivas\\ejerciciosvariados\\ejerciciosvariados\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AC1DD6D4-F33B-4CD8-8AA6-B8BBBE882350}|ejerciciosVARIADOS\\ejerciciosVARIADOS.csproj|solutionrelative:ejerciciosvariados\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -20,11 +20,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Documentos\\GitHub\\Programacion1-2024-ValentinoCarignano\\Estructuras Repetitivas\\ejerciciosVARIADOS\\ejerciciosVARIADOS\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\valen\\OneDrive\\Documents\\GitHub\\Programacion1-2024-ValentinoCarignano\\Estructuras Repetitivas\\ejerciciosVARIADOS\\ejerciciosVARIADOS\\Program.cs",
               "RelativeDocumentMoniker": "ejerciciosVARIADOS\\Program.cs",
-              "ToolTip": "D:\\Documentos\\GitHub\\Programacion1-2024-ValentinoCarignano\\Estructuras Repetitivas\\ejerciciosVARIADOS\\ejerciciosVARIADOS\\Program.cs",
+              "ToolTip": "C:\\Users\\valen\\OneDrive\\Documents\\GitHub\\Programacion1-2024-ValentinoCarignano\\Estructuras Repetitivas\\ejerciciosVARIADOS\\ejerciciosVARIADOS\\Program.cs",
               "RelativeToolTip": "ejerciciosVARIADOS\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAfAAAA",
+              "ViewState": "AQIAADAAAAAAAAAAAAAAADkAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-23T20:58:42.247Z",
               "EditorCaption": ""
