@@ -19,7 +19,9 @@ namespace ejerciciosVARIADOS
             int cantidadFinal = 0;
             int mayorCantidad = int.MinValue;
             int mayorCodigo = 0;
+            int totalVentas = 0;
             double precio = 0;
+            string nombreProducto = "";
 
             while(codigo != 0 && contador < 10)
             {
@@ -27,6 +29,11 @@ namespace ejerciciosVARIADOS
                 if(!Int32.TryParse(Console.ReadLine(), out codigo) || codigo > 10 || codigo < 0)
                 {
                     Console.WriteLine("Numero invalido. Carga cancelada, ingrese otro codigo.");
+                    codigo = 1;
+                }
+                else if(codigo == 0)
+                {
+                    break;
                 }
                 else
                 {
@@ -50,8 +57,10 @@ namespace ejerciciosVARIADOS
                                 mayorCodigo = codigo;
                             }
                             contador++;
+                            cantidadFinal = cantidad;
+                            cantidadVentas = 1;
 
-                            while(cantidadVentas != 0)
+                            while (cantidadVentas != 0)
                             {
                                 Console.Write($"Ingrese la ventas que tuvo el producto con codigo {codigo}:");
                                 if (!Int32.TryParse(Console.ReadLine(), out cantidadVentas) || cantidadVentas < 0)
@@ -61,13 +70,20 @@ namespace ejerciciosVARIADOS
                                 }
                                 else
                                 {
-                                    cantidadFinal += cantidad - cantidadVentas;
-                                    Console.WriteLine(cantidadFinal);
-                                    if (cantidadFinal <= 0)
-                                    {
-                                        Console.WriteLine($"El producto con codigo {codigo}, no tiene stock o esta en numeros negativos.");
-                                    }
+                                    cantidadFinal -= cantidadVentas;
+                                    totalVentas += cantidadVentas;
                                 }
+                            }
+                            if (cantidadFinal <= 0)
+                            {
+                                Console.WriteLine($"El producto con codigo {codigo}, no tiene stock o esta en numeros negativos.");
+                            }
+
+                            Console.Write($"Ingrese el nombre del producto con el codigo {codigo}: ");
+                            nombreProducto = Console.ReadLine();
+                            if (totalVentas < 10)
+                            {
+                                Console.WriteLine($"El producto {nombreProducto}, tuvo menos de diez ventas.");
                             }
                         }
                     }
