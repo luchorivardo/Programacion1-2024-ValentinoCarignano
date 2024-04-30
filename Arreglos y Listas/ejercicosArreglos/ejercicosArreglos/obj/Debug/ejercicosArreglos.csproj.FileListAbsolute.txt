@@ -1,0 +1,7 @@
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-2024-ValentinoCarignano\Arreglos y Listas\ejercicosArreglos\ejercicosArreglos\bin\Debug\ejercicosArreglos.exe.config
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-2024-ValentinoCarignano\Arreglos y Listas\ejercicosArreglos\ejercicosArreglos\bin\Debug\ejercicosArreglos.exe
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-2024-ValentinoCarignano\Arreglos y Listas\ejercicosArreglos\ejercicosArreglos\bin\Debug\ejercicosArreglos.pdb
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-2024-ValentinoCarignano\Arreglos y Listas\ejercicosArreglos\ejercicosArreglos\obj\Debug\ejercicosArreglos.csproj.AssemblyReference.cache
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-2024-ValentinoCarignano\Arreglos y Listas\ejercicosArreglos\ejercicosArreglos\obj\Debug\ejercicosArreglos.csproj.CoreCompileInputs.cache
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-2024-ValentinoCarignano\Arreglos y Listas\ejercicosArreglos\ejercicosArreglos\obj\Debug\ejercicosArreglos.exe
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-2024-ValentinoCarignano\Arreglos y Listas\ejercicosArreglos\ejercicosArreglos\obj\Debug\ejercicosArreglos.pdb
