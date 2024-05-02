@@ -10,7 +10,7 @@ namespace ejerciciosVARIADOS
     {
         static void Main(string[] args)
         {
-            //Ejercicio 1.
+            //Ejercicios 1, 2 y 3.
             Console.WriteLine("Carga de productos. Finaliza al ingresar codigo 0.");
             int codigo = 1;
             int contador = 0;
