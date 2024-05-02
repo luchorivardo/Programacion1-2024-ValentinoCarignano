@@ -12,6 +12,8 @@ namespace ejerciciosVariadosUsandoListas
     {
         static void Main(string[] args)
         {
+            //TODO: SI SE INGRESA EL PRIMER CODIGO MAL, NO FUNCIONA EL CALCULO DE VENTAS.
+            //TODO: EJERCICIO 3.
             Console.WriteLine("Inicia la carga de productos. Finaliza al ingresar codigo 0.");
             Console.WriteLine();
 
@@ -71,15 +73,6 @@ namespace ejerciciosVariadosUsandoListas
 
             //Ordena la lista
             productos.Sort((a, b) => a[0].CompareTo(b[0]));
-
-            //Muestra los elementos de la lista
-            //foreach (List<double> i in productos)
-            //{
-            //    int codigoForEach = (int)i[0];
-            //    double precioForEach = i[1];
-            //    int stock = (int)i[2];
-            //    Console.WriteLine($"Producto: nombre.\n Código = {codigoForEach}\n Precio = {precioForEach}\n Stock = {stock}");
-            //}
 
             Console.WriteLine("\nInicia la carga de ventas de productos. Finaliza al ingresar 0.");
             Console.WriteLine();
