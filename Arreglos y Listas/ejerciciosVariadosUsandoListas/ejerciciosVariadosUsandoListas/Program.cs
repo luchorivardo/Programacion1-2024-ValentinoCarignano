@@ -12,7 +12,6 @@ namespace ejerciciosVariadosUsandoListas
     {
         static void Main(string[] args)
         {
-            //TODO: SI SE INGRESA EL PRIMER CODIGO MAL, NO FUNCIONA EL CALCULO DE VENTAS.
             //TODO: EJERCICIO 3.
             Console.WriteLine("Inicia la carga de productos. Finaliza al ingresar codigo 0.");
             Console.WriteLine();
@@ -64,8 +63,8 @@ namespace ejerciciosVariadosUsandoListas
                             }
                         }
                     }
+                    productos.Add(new List<double> { codigo, precio, cantidad });
                 }
-                productos.Add(new List<double> { codigo, precio, cantidad });
                 Console.WriteLine();
             }
             Console.Write($"\nEl producto con codigo {mayorCodigo}, es el que mayor stock tenia a la hora de cargar los productos ({mayorCantidad}).");

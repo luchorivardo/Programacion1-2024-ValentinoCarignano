@@ -5,3 +5,10 @@ D:\Documentos\GitHub\Programacion1-2024-ValentinoCarignano\Arreglos y Listas\eje
 D:\Documentos\GitHub\Programacion1-2024-ValentinoCarignano\Arreglos y Listas\ejerciciosVariadosUsandoListas\ejerciciosVariadosUsandoListas\obj\Debug\ejerciciosVariadosUsandoListas.csproj.CoreCompileInputs.cache
 D:\Documentos\GitHub\Programacion1-2024-ValentinoCarignano\Arreglos y Listas\ejerciciosVariadosUsandoListas\ejerciciosVariadosUsandoListas\obj\Debug\ejerciciosVariadosUsandoListas.exe
 D:\Documentos\GitHub\Programacion1-2024-ValentinoCarignano\Arreglos y Listas\ejerciciosVariadosUsandoListas\ejerciciosVariadosUsandoListas\obj\Debug\ejerciciosVariadosUsandoListas.pdb
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-2024-ValentinoCarignano\Arreglos y Listas\ejerciciosVariadosUsandoListas\ejerciciosVariadosUsandoListas\obj\Debug\ejerciciosVariadosUsandoListas.csproj.AssemblyReference.cache
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-2024-ValentinoCarignano\Arreglos y Listas\ejerciciosVariadosUsandoListas\ejerciciosVariadosUsandoListas\obj\Debug\ejerciciosVariadosUsandoListas.csproj.CoreCompileInputs.cache
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-2024-ValentinoCarignano\Arreglos y Listas\ejerciciosVariadosUsandoListas\ejerciciosVariadosUsandoListas\obj\Debug\ejerciciosVariadosUsandoListas.exe
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-2024-ValentinoCarignano\Arreglos y Listas\ejerciciosVariadosUsandoListas\ejerciciosVariadosUsandoListas\obj\Debug\ejerciciosVariadosUsandoListas.pdb
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-2024-ValentinoCarignano\Arreglos y Listas\ejerciciosVariadosUsandoListas\ejerciciosVariadosUsandoListas\bin\Debug\ejerciciosVariadosUsandoListas.exe.config
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-2024-ValentinoCarignano\Arreglos y Listas\ejerciciosVariadosUsandoListas\ejerciciosVariadosUsandoListas\bin\Debug\ejerciciosVariadosUsandoListas.exe
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-2024-ValentinoCarignano\Arreglos y Listas\ejerciciosVariadosUsandoListas\ejerciciosVariadosUsandoListas\bin\Debug\ejerciciosVariadosUsandoListas.pdb
