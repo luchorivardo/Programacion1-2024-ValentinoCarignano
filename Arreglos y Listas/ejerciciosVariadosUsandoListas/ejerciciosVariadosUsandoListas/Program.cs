@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
@@ -12,7 +13,6 @@ namespace ejerciciosVariadosUsandoListas
     {
         static void Main(string[] args)
         {
-            //TODO: EJERCICIO 3.
             Console.WriteLine("Inicia la carga de productos. Finaliza al ingresar codigo 0.");
             Console.WriteLine();
 
@@ -21,6 +21,7 @@ namespace ejerciciosVariadosUsandoListas
 
             int codigo = 1, cantidad = 0, contador = 0;
             int mayorCantidad = 0, mayorCodigo = 0;
+            int totalVentas = 0;
             double precio = 0;
             string nombre;
 
@@ -63,7 +64,7 @@ namespace ejerciciosVariadosUsandoListas
                             }
                         }
                     }
-                    productos.Add(new List<double> { codigo, precio, cantidad });
+                    productos.Add(new List<double> { codigo, precio, cantidad, totalVentas });
                 }
                 Console.WriteLine();
             }
@@ -92,7 +93,8 @@ namespace ejerciciosVariadosUsandoListas
                     }
                     else
                     {
-                        i[2] -= cantidadVentas; 
+                        i[2] -= cantidadVentas;
+                        i[3] += cantidadVentas;
                     }
                     numeroVenta++;
                 }
@@ -106,13 +108,28 @@ namespace ejerciciosVariadosUsandoListas
                     Console.WriteLine($"Producto codigo {i[0]}. Stock: {i[2]}.");
                 }
             }
-               
-                //Console.Write($"Ingrese el nombre: ");
-                //nombre = Console.ReadLine();
-                //if (totalVentas < 10)
-                //{
-                //    Console.WriteLine($"El producto {nombreProducto}, tuvo menos de diez ventas.");
-                //}
+
+            Console.WriteLine($"Inicio carga de nombre de productos: ");
+            List<string> nombresProductos = new List<string>();
+            string nombreProducto;
+
+            foreach (List<double> producto in productos)
+            {
+                Console.Write($"Codigo {producto[0]}: ");
+                nombreProducto = Console.ReadLine();
+                nombresProductos.Add(nombreProducto);
             }
+
+            Console.WriteLine($"Los siguientes productos tuvieron menos de diez ventas: ");
+            int indice = 0;
+            foreach (List<double> producto in productos)
+            {
+                if (producto[3] < 10)
+                {
+                    Console.WriteLine(nombresProductos[indice]);
+                }
+                indice++;
+            }
+        }
     }
 }
