@@ -23,7 +23,6 @@ namespace ejerciciosVariadosUsandoListas
             int mayorCantidad = 0, mayorCodigo = 0;
             int totalVentas = 0;
             double precio = 0;
-            string nombre;
 
             while (codigo != 0 && contador < 10)
             {
