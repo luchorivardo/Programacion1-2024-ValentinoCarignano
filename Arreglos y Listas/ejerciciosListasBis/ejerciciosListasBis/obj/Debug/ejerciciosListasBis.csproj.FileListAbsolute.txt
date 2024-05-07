@@ -1,0 +1,7 @@
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-2024-ValentinoCarignano\Arreglos y Listas\ejerciciosListasBis\ejerciciosListasBis\bin\Debug\ejerciciosListasBis.exe.config
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-2024-ValentinoCarignano\Arreglos y Listas\ejerciciosListasBis\ejerciciosListasBis\bin\Debug\ejerciciosListasBis.exe
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-2024-ValentinoCarignano\Arreglos y Listas\ejerciciosListasBis\ejerciciosListasBis\bin\Debug\ejerciciosListasBis.pdb
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-2024-ValentinoCarignano\Arreglos y Listas\ejerciciosListasBis\ejerciciosListasBis\obj\Debug\ejerciciosListasBis.csproj.AssemblyReference.cache
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-2024-ValentinoCarignano\Arreglos y Listas\ejerciciosListasBis\ejerciciosListasBis\obj\Debug\ejerciciosListasBis.csproj.CoreCompileInputs.cache
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-2024-ValentinoCarignano\Arreglos y Listas\ejerciciosListasBis\ejerciciosListasBis\obj\Debug\ejerciciosListasBis.exe
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-2024-ValentinoCarignano\Arreglos y Listas\ejerciciosListasBis\ejerciciosListasBis\obj\Debug\ejerciciosListasBis.pdb
