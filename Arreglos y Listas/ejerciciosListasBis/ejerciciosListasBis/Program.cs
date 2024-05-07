@@ -43,7 +43,7 @@ namespace ejerciciosListasBis
                     Console.WriteLine("Numero no valido, ingrese otro.");
                     numero = 1;
                 }
-                else
+                else if (numero != 0)
                 {
                     enteros.Add(numero);
                 }
