@@ -1,0 +1,7 @@
+D:\Documentos\GitHub\Programacion1-2024-ValentinoCarignano\Arreglos y Listas\listasPracticaParcial\listasPracticaParcial\bin\Debug\listasPracticaParcial.exe.config
+D:\Documentos\GitHub\Programacion1-2024-ValentinoCarignano\Arreglos y Listas\listasPracticaParcial\listasPracticaParcial\bin\Debug\listasPracticaParcial.exe
+D:\Documentos\GitHub\Programacion1-2024-ValentinoCarignano\Arreglos y Listas\listasPracticaParcial\listasPracticaParcial\bin\Debug\listasPracticaParcial.pdb
+D:\Documentos\GitHub\Programacion1-2024-ValentinoCarignano\Arreglos y Listas\listasPracticaParcial\listasPracticaParcial\obj\Debug\listasPracticaParcial.csproj.AssemblyReference.cache
+D:\Documentos\GitHub\Programacion1-2024-ValentinoCarignano\Arreglos y Listas\listasPracticaParcial\listasPracticaParcial\obj\Debug\listasPracticaParcial.csproj.CoreCompileInputs.cache
+D:\Documentos\GitHub\Programacion1-2024-ValentinoCarignano\Arreglos y Listas\listasPracticaParcial\listasPracticaParcial\obj\Debug\listasPracticaParcial.exe
+D:\Documentos\GitHub\Programacion1-2024-ValentinoCarignano\Arreglos y Listas\listasPracticaParcial\listasPracticaParcial\obj\Debug\listasPracticaParcial.pdb
