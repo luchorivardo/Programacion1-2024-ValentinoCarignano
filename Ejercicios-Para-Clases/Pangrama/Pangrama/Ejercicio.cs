@@ -19,23 +19,18 @@
     {
         public static bool IsPangram(string input)
         {
-            char[] inputArray = input.ToLower().ToCharArray();
-            bool isPangram = false;
+            bool isPangram = true;
             List<char> abecedario = new List<char>() { 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'};
 
-            for (int i = 0; i < inputArray.Length; i++)
+            int i = 0;
+            while(isPangram && i < abecedario.Count)
             {
-                if (abecedario.Contains(inputArray[i]))
+                if (!input.ToLower().Contains(abecedario[i]))
                 {
-                    abecedario.Remove(inputArray[i]);
+                    isPangram = false;
                 }
+                i++;
             }
-
-            if(abecedario.Count == 0)
-            {
-                isPangram = true;
-            }
-
             return isPangram;
         }
     }
