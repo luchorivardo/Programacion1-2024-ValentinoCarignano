@@ -1,8 +1,13 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
+using System.Reflection.Metadata.Ecma335;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace La_infiltracion_de_Analia
 {
@@ -63,22 +68,66 @@ namespace La_infiltracion_de_Analia
     {
         public static bool CanFastAttack(bool knightIsAwake)
         {
-            throw new NotImplementedException("Please implement the (static) QuestLogic.CanFastAttack() method");
+            bool fastAttak = true;
+
+            if(knightIsAwake == true)
+            {
+                fastAttak = false;
+            }
+
+            return fastAttak;
         }
 
         public static bool CanSpy(bool knightIsAwake, bool archerIsAwake, bool prisonerIsAwake)
         {
-            throw new NotImplementedException("Please implement the (static) QuestLogic.CanSpy() method");
+            bool canSpy = true;
+
+            if(knightIsAwake == false && archerIsAwake == false && prisonerIsAwake == false)
+            {
+                canSpy = false;
+            }
+
+            return canSpy;
         }
 
         public static bool CanSignalPrisoner(bool archerIsAwake, bool prisonerIsAwake)
         {
-            throw new NotImplementedException("Please implement the (static) QuestLogic.CanSignalPrisoner() method");
+            bool canSignal = false;
+
+            if(archerIsAwake == false && prisonerIsAwake == true)
+            {
+                canSignal = true;
+            }
+
+            return canSignal;
         }
 
         public static bool CanFreePrisoner(bool knightIsAwake, bool archerIsAwake, bool prisonerIsAwake, bool petDogIsPresent)
         {
-            throw new NotImplementedException("Please implement the (static) QuestLogic.CanFreePrisoner() method");
+            //Si Analia no tiene su perro entonces ella y el prisionero deben ser muy astutos!
+            //Analia puede liberar al prisionero si el prisionero está despierto y el caballero
+            //y el arquero están durmiendo, pero si el prisionero está durmiendo no pueden ser
+            //rescatados: el prisionero se sorprendería por la repentina aparición de Analia y
+            //despertaría al caballero y al arquero.
+
+            bool canFree = false;
+
+            if(petDogIsPresent == true)
+            {
+                if(archerIsAwake == false)
+                {
+                    canFree = true;
+                }
+            }
+            else
+            {
+                if(prisonerIsAwake == true && archerIsAwake == false && knightIsAwake == false)
+                {
+                    canFree = true;
+                }
+            }
+
+            return canFree;
         }
     }
 }

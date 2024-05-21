@@ -36,17 +36,34 @@
     {
         public static string Message(string logLine)
         {
-            throw new NotImplementedException("Please implement the (static) LogLine.Message() method");
+            string[] registro = logLine.Split(":");
+            string mensaje = registro[1].Trim();
+
+            return mensaje;
         }
 
         public static string LogLevel(string logLine)
         {
-            throw new NotImplementedException("Please implement the (static) LogLine.LogLevel() method");
+            string[] registro = logLine.Split(":");
+
+            int primerCorchete = logLine.IndexOf("[");
+            int segundoCorchete = logLine.IndexOf("]");
+
+            string mensaje = registro[0].Substring(primerCorchete + 1, segundoCorchete - 1).ToLower();
+
+            return mensaje;
         }
 
         public static string Reformat(string logLine)
         {
-            throw new NotImplementedException("Please implement the (static) LogLine.Reformat() method");
+            string[] registro = logLine.Split(":");
+
+            string error = registro[0].Replace("[","(").Replace("]",")").ToLower();
+            string mensaje = registro[1].Trim();
+
+            string respuesta =  mensaje + " " + error;
+
+            return respuesta;
         }
     }
 
