@@ -25,7 +25,30 @@
     {
         public static int Distance(string firstStrand, string secondStrand)
         {
-            throw new NotImplementedException("You need to implement this function.");
+            char[] primeraCadena = firstStrand.ToCharArray();
+            char[] segundaCadena = secondStrand.ToCharArray();
+
+            int cantidadPrimeraCadena = primeraCadena.Count();
+            int cantidadSegundaCadena = segundaCadena.Count();
+
+            int hamming = 0;
+
+            if (cantidadPrimeraCadena != cantidadSegundaCadena)
+            {
+                throw new ArgumentException("Las cadenas no se pueden comparar, tienen distintas longitudes.");
+            }
+            else
+            {
+                for (int i = 0; i < primeraCadena.Length; i++)
+                {
+                    if (primeraCadena[i] != segundaCadena[i])
+                    {
+                        hamming++;
+                    }
+                }
+            }
+
+            return hamming;
         }
     }
 }
