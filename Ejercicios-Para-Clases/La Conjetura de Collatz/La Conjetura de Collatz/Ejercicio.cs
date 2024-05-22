@@ -11,7 +11,9 @@ namespace La_Conjetura_de_Collatz
         Consigna: 
             La Conjetura de Collatz o problema 3x+1 se puede resumir de la siguiente manera:
 
-            Tome cualquier número entero positivo n. Si n es par, divide n entre 2 para obtener n/2. Si n es impar, multiplica n por 3 y suma 1 para obtener 3n + 1. Repite el proceso indefinidamente. La conjetura afirma que no importa con qué número comiences, eventualmente siempre llegarás a 1.
+            Tome cualquier número entero positivo n. Si n es par, divide n entre 2 para obtener n/2. Si n es impar,
+            multiplica n por 3 y suma 1 para obtener 3n + 1. Repite el proceso indefinidamente. La conjetura afirma que no
+            importa con qué número comiences, eventualmente siempre llegarás a 1.
 
             Dado un número n, devuelve el número de pasos necesarios para llegar a 1.
 
@@ -36,7 +38,30 @@ namespace La_Conjetura_de_Collatz
     {
         public static int Steps(int number)
         {
-            throw new NotImplementedException("You need to implement this function");
+            int numeroPasos = 0;
+
+            if(number > 0)
+            {
+                while (number != 1)
+                {
+                    if (number % 2 == 0)
+                    {
+                        number = number / 2;
+                        numeroPasos++;
+                    }
+                    else
+                    {
+                        number = number * 3 + 1;
+                        numeroPasos++;
+                    }
+                }
+            }
+            else
+            {
+                throw new ArgumentOutOfRangeException("El numero debe ser entero positivo.");
+            }
+
+            return numeroPasos;
         }
     }
 }
