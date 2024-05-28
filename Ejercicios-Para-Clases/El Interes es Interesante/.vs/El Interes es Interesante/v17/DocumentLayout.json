@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Documentos\\GitHub\\Programacion1-2024-ValentinoCarignano\\Ejercicios-Para-Clases\\El Interes es Interesante\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CF42E91E-6D15-4743-9398-92D4ECDD5C14}|El Interes es Interesante\\El Interes es Interesante.csproj|d:\\documentos\\github\\programacion1-2024-valentinocarignano\\ejercicios-para-clases\\el interes es interesante\\el interes es interesante\\ejercicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF42E91E-6D15-4743-9398-92D4ECDD5C14}|El Interes es Interesante\\El Interes es Interesante.csproj|solutionrelative:el interes es interesante\\ejercicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF42E91E-6D15-4743-9398-92D4ECDD5C14}|El Interes es Interesante\\El Interes es Interesante.csproj|d:\\documentos\\github\\programacion1-2024-valentinocarignano\\ejercicios-para-clases\\el interes es interesante\\el interes es interesante\\elinteresesinteresantetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF42E91E-6D15-4743-9398-92D4ECDD5C14}|El Interes es Interesante\\El Interes es Interesante.csproj|solutionrelative:el interes es interesante\\elinteresesinteresantetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Ejercicio.cs",
+              "DocumentMoniker": "D:\\Documentos\\GitHub\\Programacion1-2024-ValentinoCarignano\\Ejercicios-Para-Clases\\El Interes es Interesante\\El Interes es Interesante\\Ejercicio.cs",
+              "RelativeDocumentMoniker": "El Interes es Interesante\\Ejercicio.cs",
+              "ToolTip": "D:\\Documentos\\GitHub\\Programacion1-2024-ValentinoCarignano\\Ejercicios-Para-Clases\\El Interes es Interesante\\El Interes es Interesante\\Ejercicio.cs",
+              "RelativeToolTip": "El Interes es Interesante\\Ejercicio.cs",
+              "ViewState": "AQIAAEsAAAAAAAAAAAAmwFUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T20:38:59.793Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ElInteresEsInteresanteTests.cs",
+              "DocumentMoniker": "D:\\Documentos\\GitHub\\Programacion1-2024-ValentinoCarignano\\Ejercicios-Para-Clases\\El Interes es Interesante\\El Interes es Interesante\\ElInteresEsInteresanteTests.cs",
+              "RelativeDocumentMoniker": "El Interes es Interesante\\ElInteresEsInteresanteTests.cs",
+              "ToolTip": "D:\\Documentos\\GitHub\\Programacion1-2024-ValentinoCarignano\\Ejercicios-Para-Clases\\El Interes es Interesante\\El Interes es Interesante\\ElInteresEsInteresanteTests.cs",
+              "RelativeToolTip": "El Interes es Interesante\\ElInteresEsInteresanteTests.cs",
+              "ViewState": "AQIAAFAAAAAAAAAAAAAQwF8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T20:38:56.458Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
