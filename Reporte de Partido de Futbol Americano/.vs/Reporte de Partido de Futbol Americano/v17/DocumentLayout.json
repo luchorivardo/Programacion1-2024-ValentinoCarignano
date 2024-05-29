@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\valen\\OneDrive\\Documents\\GitHub\\Programacion1-2024-ValentinoCarignano\\Reporte de Partido de Futbol Americano\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3DF5AA65-F371-4242-9ECF-316F8CB3F793}|Reporte de Partido de Futbol Americano\\Reporte de Partido de Futbol Americano.csproj|c:\\users\\valen\\onedrive\\documents\\github\\programacion1-2024-valentinocarignano\\reporte de partido de futbol americano\\reporte de partido de futbol americano\\reportedepartidodefutbolamericanotests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3DF5AA65-F371-4242-9ECF-316F8CB3F793}|Reporte de Partido de Futbol Americano\\Reporte de Partido de Futbol Americano.csproj|solutionrelative:reporte de partido de futbol americano\\reportedepartidodefutbolamericanotests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DF5AA65-F371-4242-9ECF-316F8CB3F793}|Reporte de Partido de Futbol Americano\\Reporte de Partido de Futbol Americano.csproj|c:\\users\\valen\\onedrive\\documents\\github\\programacion1-2024-valentinocarignano\\reporte de partido de futbol americano\\reporte de partido de futbol americano\\ejercicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3DF5AA65-F371-4242-9ECF-316F8CB3F793}|Reporte de Partido de Futbol Americano\\Reporte de Partido de Futbol Americano.csproj|solutionrelative:reporte de partido de futbol americano\\ejercicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DF5AA65-F371-4242-9ECF-316F8CB3F793}|Reporte de Partido de Futbol Americano\\Reporte de Partido de Futbol Americano.csproj|c:\\users\\valen\\onedrive\\documents\\github\\programacion1-2024-valentinocarignano\\reporte de partido de futbol americano\\reporte de partido de futbol americano\\offfieldactivitiesandcharacters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3DF5AA65-F371-4242-9ECF-316F8CB3F793}|Reporte de Partido de Futbol Americano\\Reporte de Partido de Futbol Americano.csproj|solutionrelative:reporte de partido de futbol americano\\offfieldactivitiesandcharacters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ReporteDePartidoDeFutbolAmericanoTests.cs",
+              "DocumentMoniker": "C:\\Users\\valen\\OneDrive\\Documents\\GitHub\\Programacion1-2024-ValentinoCarignano\\Reporte de Partido de Futbol Americano\\Reporte de Partido de Futbol Americano\\ReporteDePartidoDeFutbolAmericanoTests.cs",
+              "RelativeDocumentMoniker": "Reporte de Partido de Futbol Americano\\ReporteDePartidoDeFutbolAmericanoTests.cs",
+              "ToolTip": "C:\\Users\\valen\\OneDrive\\Documents\\GitHub\\Programacion1-2024-ValentinoCarignano\\Reporte de Partido de Futbol Americano\\Reporte de Partido de Futbol Americano\\ReporteDePartidoDeFutbolAmericanoTests.cs",
+              "RelativeToolTip": "Reporte de Partido de Futbol Americano\\ReporteDePartidoDeFutbolAmericanoTests.cs",
+              "ViewState": "AQIAADAAAAAAAAAAAAAewDUAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-29T23:19:22.96Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "OffFieldActivitiesAndCharacters.cs",
+              "DocumentMoniker": "C:\\Users\\valen\\OneDrive\\Documents\\GitHub\\Programacion1-2024-ValentinoCarignano\\Reporte de Partido de Futbol Americano\\Reporte de Partido de Futbol Americano\\OffFieldActivitiesAndCharacters.cs",
+              "RelativeDocumentMoniker": "Reporte de Partido de Futbol Americano\\OffFieldActivitiesAndCharacters.cs",
+              "ToolTip": "C:\\Users\\valen\\OneDrive\\Documents\\GitHub\\Programacion1-2024-ValentinoCarignano\\Reporte de Partido de Futbol Americano\\Reporte de Partido de Futbol Americano\\OffFieldActivitiesAndCharacters.cs",
+              "RelativeToolTip": "Reporte de Partido de Futbol Americano\\OffFieldActivitiesAndCharacters.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAA1wBcAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-29T23:19:20.835Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Ejercicio.cs",
+              "DocumentMoniker": "C:\\Users\\valen\\OneDrive\\Documents\\GitHub\\Programacion1-2024-ValentinoCarignano\\Reporte de Partido de Futbol Americano\\Reporte de Partido de Futbol Americano\\Ejercicio.cs",
+              "RelativeDocumentMoniker": "Reporte de Partido de Futbol Americano\\Ejercicio.cs",
+              "ToolTip": "C:\\Users\\valen\\OneDrive\\Documents\\GitHub\\Programacion1-2024-ValentinoCarignano\\Reporte de Partido de Futbol Americano\\Reporte de Partido de Futbol Americano\\Ejercicio.cs",
+              "RelativeToolTip": "Reporte de Partido de Futbol Americano\\Ejercicio.cs",
+              "ViewState": "AQIAAGkAAAAAAAAAAAAQwHoAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-29T23:19:14.341Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
