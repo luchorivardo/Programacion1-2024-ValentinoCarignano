@@ -1,8 +1,11 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Tim_de_Marketing
 {
@@ -35,7 +38,26 @@ namespace Tim_de_Marketing
     {
         public static string Print(int? id, string name, string? department)
         {
-            throw new NotImplementedException("Please implement the (static) Badge.Print() method");
+            string credencial = "";
+
+            if (id == null && department == null)
+            {
+                credencial = $"{name} - OWNER";
+            }
+            else if (id == null)
+            {
+                credencial = $"{name} - {department.ToUpper()}";
+            }
+            else if(department == null)
+            {
+                credencial = $"[{id}] - {name} - OWNER";
+            }
+            else
+            {
+                credencial = $"[{id}] - {name} - {department.ToUpper()}";
+            }
+
+            return credencial;
         }
     }
 }
