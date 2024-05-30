@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\valen\\OneDrive\\Documents\\GitHub\\Programacion1-2024-ValentinoCarignano\\Reporte de Partido de Futbol Americano\\Reporte de Partido de Futbol Americano\\Reporte de Partido de Futbol Americano.csproj": {}
+    "D:\\Documentos\\GitHub\\Programacion1-2024-ValentinoCarignano\\Reporte de Partido de Futbol Americano\\Reporte de Partido de Futbol Americano\\Reporte de Partido de Futbol Americano.csproj": {}
   },
   "projects": {
-    "C:\\Users\\valen\\OneDrive\\Documents\\GitHub\\Programacion1-2024-ValentinoCarignano\\Reporte de Partido de Futbol Americano\\Reporte de Partido de Futbol Americano\\Reporte de Partido de Futbol Americano.csproj": {
+    "D:\\Documentos\\GitHub\\Programacion1-2024-ValentinoCarignano\\Reporte de Partido de Futbol Americano\\Reporte de Partido de Futbol Americano\\Reporte de Partido de Futbol Americano.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\valen\\OneDrive\\Documents\\GitHub\\Programacion1-2024-ValentinoCarignano\\Reporte de Partido de Futbol Americano\\Reporte de Partido de Futbol Americano\\Reporte de Partido de Futbol Americano.csproj",
+        "projectUniqueName": "D:\\Documentos\\GitHub\\Programacion1-2024-ValentinoCarignano\\Reporte de Partido de Futbol Americano\\Reporte de Partido de Futbol Americano\\Reporte de Partido de Futbol Americano.csproj",
         "projectName": "Reporte de Partido de Futbol Americano",
-        "projectPath": "C:\\Users\\valen\\OneDrive\\Documents\\GitHub\\Programacion1-2024-ValentinoCarignano\\Reporte de Partido de Futbol Americano\\Reporte de Partido de Futbol Americano\\Reporte de Partido de Futbol Americano.csproj",
-        "packagesPath": "C:\\Users\\valen\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\valen\\OneDrive\\Documents\\GitHub\\Programacion1-2024-ValentinoCarignano\\Reporte de Partido de Futbol Americano\\Reporte de Partido de Futbol Americano\\obj\\",
+        "projectPath": "D:\\Documentos\\GitHub\\Programacion1-2024-ValentinoCarignano\\Reporte de Partido de Futbol Americano\\Reporte de Partido de Futbol Americano\\Reporte de Partido de Futbol Americano.csproj",
+        "packagesPath": "C:\\Users\\Valentino\\.nuget\\packages\\",
+        "outputPath": "D:\\Documentos\\GitHub\\Programacion1-2024-ValentinoCarignano\\Reporte de Partido de Futbol Americano\\Reporte de Partido de Futbol Americano\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\valen\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Valentino\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -78,7 +78,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

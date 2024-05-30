@@ -122,11 +122,44 @@ namespace Reporte_de_Partido_de_Futbol_Americano
 
         public static string AnalyzeOffField(object report)
         {
-            string mensaje = "";
-            //El número actual de seguidores en el estadio(cualquiera int)
-            //Anuncios realizados a través del sistema de megafonía del estadio(cualquiera string)
+            string message = "";
 
-            return mensaje;
+            if (report is int)
+            {
+                message = $"There are {report} supporters at the match.";
+            }
+            else if (report is string)
+            {
+                message = report.ToString();
+            }
+            else if (report is Incident)
+            {
+                Incident incident = (Incident)report;
+                message = incident.GetDescription();
+                if (report is Injury)
+                {
+                    Injury injury = (Injury)report;
+                    message = injury.GetDescription();
+                }
+            }
+            else if (report is Manager)
+            {
+                Manager manager = (Manager)report;
+                if (manager.Club == null)
+                {
+                    message = manager.Name;
+                }
+                else
+                {
+                    message = $"{manager.Name} ({manager.Club})";
+                }
+            }
+            else
+            {
+                throw new ArgumentException();
+            }
+
+            return message;
         }
     }
 

@@ -38,6 +38,6 @@ namespace Reporte_de_Partido_de_Futbol_Americano
             this.player = player;
         }
 
-        public override string GetDescription() => $"Player {player} is injured.";
+        public override string GetDescription() => $"Oh no! Player {player} is injured. Medics are on the field.";
     }
 }
