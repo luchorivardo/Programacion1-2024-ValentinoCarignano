@@ -1,0 +1,17 @@
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-2024-ValentinoCarignano\POO\Libreria\Front\bin\Debug\net8.0-windows\Front.exe
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-2024-ValentinoCarignano\POO\Libreria\Front\bin\Debug\net8.0-windows\Front.deps.json
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-2024-ValentinoCarignano\POO\Libreria\Front\bin\Debug\net8.0-windows\Front.runtimeconfig.json
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-2024-ValentinoCarignano\POO\Libreria\Front\bin\Debug\net8.0-windows\Front.dll
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-2024-ValentinoCarignano\POO\Libreria\Front\bin\Debug\net8.0-windows\Front.pdb
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-2024-ValentinoCarignano\POO\Libreria\Front\obj\Debug\net8.0-windows\Front.Form1.resources
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-2024-ValentinoCarignano\POO\Libreria\Front\obj\Debug\net8.0-windows\Front.csproj.GenerateResource.cache
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-2024-ValentinoCarignano\POO\Libreria\Front\obj\Debug\net8.0-windows\Front.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-2024-ValentinoCarignano\POO\Libreria\Front\obj\Debug\net8.0-windows\Front.AssemblyInfoInputs.cache
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-2024-ValentinoCarignano\POO\Libreria\Front\obj\Debug\net8.0-windows\Front.AssemblyInfo.cs
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-2024-ValentinoCarignano\POO\Libreria\Front\obj\Debug\net8.0-windows\Front.csproj.CoreCompileInputs.cache
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-2024-ValentinoCarignano\POO\Libreria\Front\obj\Debug\net8.0-windows\Front.sourcelink.json
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-2024-ValentinoCarignano\POO\Libreria\Front\obj\Debug\net8.0-windows\Front.dll
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-2024-ValentinoCarignano\POO\Libreria\Front\obj\Debug\net8.0-windows\refint\Front.dll
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-2024-ValentinoCarignano\POO\Libreria\Front\obj\Debug\net8.0-windows\Front.pdb
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-2024-ValentinoCarignano\POO\Libreria\Front\obj\Debug\net8.0-windows\Front.genruntimeconfig.cache
+C:\Users\valen\OneDrive\Documents\GitHub\Programacion1-2024-ValentinoCarignano\POO\Libreria\Front\obj\Debug\net8.0-windows\ref\Front.dll
