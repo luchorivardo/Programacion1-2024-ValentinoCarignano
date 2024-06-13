@@ -1,4 +1,9 @@
-﻿namespace Need_for_Speed
+﻿using static System.Runtime.InteropServices.JavaScript.JSType;
+using System.Threading;
+using System.Collections.Generic;
+using Microsoft.VisualStudio.TestPlatform.ObjectModel.Client;
+
+namespace Need_for_Speed
 {
     /*
         Consigna: 
@@ -24,7 +29,7 @@
                     var raceTrack = new RaceTrack(distance);
     
             Tarea 3: Conduce el coche
-                mplemente el método RemoteControlCar.Drive() que actualiza la cantidad de metros recorridos en función de la velocidad del automóvil. Implemente también el método RemoteControlCar.DistanceDriven() para devolver la cantidad de metros recorridos por el automóvil.
+                implemente el método RemoteControlCar.Drive() que actualiza la cantidad de metros recorridos en función de la velocidad del automóvil. Implemente también el método RemoteControlCar.DistanceDriven() para devolver la cantidad de metros recorridos por el automóvil.
                     int speed = 5;
                     int batteryDrain = 2;
                     var car = new RemoteControlCar(speed, batteryDrain);
@@ -65,37 +70,72 @@
 
     public class RemoteControlCar
     {
-        // TODO: defina el constructor para la clase 'RemoteControlCar'
+        private int speed;
+        private int batteryDrain;
+        private int distance;
+        private int battery;
+
+        public RemoteControlCar(int speed, int batteryDrain)
+        {
+            this.speed = speed;
+            this.batteryDrain = batteryDrain;
+            this.distance = 0;
+            this.battery = 100;
+        }
 
         public bool BatteryDrained()
         {
-            throw new NotImplementedException("Please implement the RemoteControlCar.BatteryDrained() method");
+            if (battery <= 0 || battery < batteryDrain)
+            {
+                return true;
+            }
+
+            return false;
         }
 
         public int DistanceDriven()
         {
-            throw new NotImplementedException("Please implement the RemoteControlCar.DistanceDriven() method");
+            return distance;
         }
-
         public void Drive()
         {
-            throw new NotImplementedException("Please implement the RemoteControlCar.Drive() method");
+            battery -= batteryDrain;
+
+            if (battery >= 0 || battery > batteryDrain)
+            {
+                distance += speed;
+            }
         }
 
         public static RemoteControlCar Nitro()
         {
-            throw new NotImplementedException("Please implement the (static) RemoteControlCar.Nitro() method");
+            RemoteControlCar car = new RemoteControlCar(50, 4);
+
+            return car;
         }
     }
 
     public class RaceTrack
     {
-        // TODO: defina el constructor para la clase 'RaceTrack'
+        private int distance;
+
+        public RaceTrack(int distance)
+        {
+            this.distance = distance;
+        }
 
         public bool TryFinishTrack(RemoteControlCar car)
         {
-            throw new NotImplementedException("Please implement the RaceTrack.TryFinishTrack() method");
+            while (!car.BatteryDrained())
+            {
+                car.Drive();
+                if (car.DistanceDriven() >= this.distance)
+                {
+                    return true;
+                }
+            }
+
+            return false;
         }
     }
-
 }
