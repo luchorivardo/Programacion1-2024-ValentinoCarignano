@@ -13,5 +13,7 @@ namespace CEntidades.Entidades
         public DateTime FechaInicio { get; set; }
         public DateTime FechaLimite { get; set; }
         public DateTime? FechaDevolucion { get; set; }
+
+        public Cliente Cliente { get; set; }
     }
 }

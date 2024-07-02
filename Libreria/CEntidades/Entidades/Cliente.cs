@@ -14,5 +14,6 @@ namespace CEntidades.Entidades
         public bool PagaIVA { get; set; }
 
         public Persona PersonaCliente { get; set; }
+        public ICollection<Prestamo> Prestamos { get; set; }
     }
 }
