@@ -8,7 +8,9 @@ namespace CEntidades.Entidades
 {
     public class GeneroLibro
     {
-        public Libro IdLibro { get; set; }
-        public Genero IdGenero { get; set; }
+        public int IdGeneroLibro { get; set; }
+
+        public Libro LibroGeneroLibro { get; set; }
+        public Genero GeneroGeneroLibro { get; set; }
     }
 }

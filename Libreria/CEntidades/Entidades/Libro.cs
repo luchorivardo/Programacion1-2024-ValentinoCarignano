@@ -5,10 +5,11 @@
         public int IdLibro { get; set; }
 
         public string ISBN { get; set; }
-        public string TituloLibro { get; set; }
-        public int AnioPublicacionLibro { get; set; }
-        public string DescripcionLibro { get; set; }
+        public string Titulo { get; set; }
+        public DateTime FechaPublicacion { get; set; }
+        public string Descripcion { get; set; }
+        public int PrecioVenta { get; set; }
 
-        public Editorial IdEditorial { get; set; }
+        public Editorial EditorialLibro { get; set; }
     }
 }

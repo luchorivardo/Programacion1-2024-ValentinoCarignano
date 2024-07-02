@@ -10,6 +10,6 @@ namespace CEntidades.Entidades
     {
         public int IdCopia { get; set; }
 
-        public double PrecioCopia { get; set; }
+        public double PrecioPrestamo { get; set; }
     }
 }

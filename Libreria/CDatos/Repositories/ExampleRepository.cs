@@ -17,7 +17,7 @@ namespace CDatos.Repositories
         {
             try
             {
-                return await _context.Example.ToListAsync();
+                return await _context.Libro.ToListAsync();
             }
             catch (Exception)
             {

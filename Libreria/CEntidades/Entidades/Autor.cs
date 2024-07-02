@@ -6,10 +6,15 @@ using System.Threading.Tasks;
 
 namespace CEntidades.Entidades
 {
-    public class Autor : Persona
+    public class Autor
     {
+        public int IdAutor { get; set; }
+
         public DateTime FechaNacimientoAutor { get; set; }
         public string BiografiaAutor { get; set; }
         public string NacionalidadAutor { get; set; }
+        public int CantidadLibrosEscritosAutor { get; set; }
+
+        public Persona PersonaAutor { get; set; }
     }
 }

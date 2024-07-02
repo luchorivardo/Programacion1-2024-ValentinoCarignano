@@ -10,6 +10,6 @@ namespace CEntidades.Entidades
     {
         public int IdFormaPago { get; set; }
 
-        public string DescripcionFormaPago { get; set; }
+        public string Descripcion { get; set; }
     }
 }

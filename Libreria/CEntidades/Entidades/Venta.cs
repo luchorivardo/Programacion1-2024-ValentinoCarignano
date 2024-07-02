@@ -10,6 +10,6 @@ namespace CEntidades.Entidades
     {
         public int IdVenta { get; set; }
 
-        public double MontoVenta { get; set; }
+        public DateTime FechaVenta { get; set; }
     }
 }

@@ -6,9 +6,13 @@ using System.Threading.Tasks;
 
 namespace CEntidades.Entidades
 {
-    public class Cliente : Persona
+    public class Cliente
     {
+        public int IdCliente { get; set; }
+
         public bool EsSocio { get; set; }
         public bool PagaIVA { get; set; }
+
+        public Persona PersonaCliente { get; set; }
     }
 }
