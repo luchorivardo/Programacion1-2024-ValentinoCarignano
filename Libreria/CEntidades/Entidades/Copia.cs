@@ -11,5 +11,8 @@ namespace CEntidades.Entidades
         public int IdCopia { get; set; }
 
         public double PrecioPrestamo { get; set; }
+
+        public ICollection<Prestamo> Prestamos { get; set; }
+        public Libro Libro { get; set; }
     }
 }

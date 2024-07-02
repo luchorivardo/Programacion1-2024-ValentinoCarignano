@@ -11,6 +11,8 @@
         public int PrecioVenta { get; set; }
 
         public ICollection<Autor> Autores { get; set; }
-        public Editorial EditorialLibro { get; set; }
+        public ICollection<Genero> Generos { get; set; }
+        public ICollection<Copia> Copias { get; set; }
+        public Editorial Editorial { get; set; }
     }
 }

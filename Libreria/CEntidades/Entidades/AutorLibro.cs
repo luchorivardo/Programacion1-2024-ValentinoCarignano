@@ -12,6 +12,5 @@ namespace CEntidades.Entidades
 
         public int IdAutor { get; set; }
         public int IdLibro { get; set; }
-
     }
 }

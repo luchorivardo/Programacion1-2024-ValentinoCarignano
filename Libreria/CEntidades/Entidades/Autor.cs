@@ -14,8 +14,8 @@ namespace CEntidades.Entidades
         public string BiografiaAutor { get; set; }
         public string NacionalidadAutor { get; set; }
         public int CantidadLibrosEscritosAutor { get; set; }
-
-        public ICollection<Libro> Libros { get; set; }
+        
         public Persona PersonaAutor { get; set; }
+        public ICollection<Libro> Libros { get; set; }
     }
 }

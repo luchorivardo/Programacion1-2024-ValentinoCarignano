@@ -20,6 +20,5 @@ namespace CEntidades.Entidades
         public Autor? Autor { get; set; }
         public Cliente? Cliente { get; set; }
         public Empleado? Empleado { get; set; }
-
     }
 }
