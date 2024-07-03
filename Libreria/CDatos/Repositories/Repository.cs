@@ -29,7 +29,7 @@ namespace CDatos.Repositories
             return this._context.Set<T>().Where(expression).ToList();
         }
 
-        public async Task<T> GetById(int id)
+        public async Task<T> GetByIdAsync(int id)
         {
             return await this._context.Set<T>().FindAsync(id);
         }

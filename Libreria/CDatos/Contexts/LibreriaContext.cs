@@ -36,9 +36,7 @@ namespace CDatos.Contexts
                 optionsBuilder.UseSqlServer("Data Source=localhost\\SQLEXPRESS;Initial Catalog=LibreriaProg2024;Integrated Security=True;TrustServerCertificate=true");
             }
         }
-        //TODO: modelBuilder mucho a mucho va?
-        //relaciones con entidad venta (libro/venta o copia/venta o (empleado/venta)
-        //relaciones con entidad empleado
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.HasAnnotation("Relational:Collation", "en_US.UTF-8");
@@ -104,6 +102,15 @@ namespace CDatos.Contexts
             {
                 entity.HasKey(e => e.IdEmpleado)
                     .HasName("PK_ID_EMPLEADO");
+
+                entity.HasMany(e => e.Prestamos)
+                    .WithOne(e => e.Empleado)
+                    .HasForeignKey("IdEmpleado")
+                    .IsRequired();
+                entity.HasMany(e => e.Ventas)
+                    .WithOne(e => e.Empleado)
+                    .HasForeignKey("IdEmpleado")
+                    .IsRequired();
             });
 
             modelBuilder.Entity<FormaPago>(entity =>
@@ -150,6 +157,10 @@ namespace CDatos.Contexts
                     .WithOne(e => e.Libro)
                     .HasForeignKey("IdLibro")
                     .IsRequired();
+                entity.HasMany(e => e.Ventas)
+                   .WithOne(e => e.Libro)
+                   .HasForeignKey("IdLibro")
+                   .IsRequired();
             });
 
             modelBuilder.Entity<Persona>(entity =>

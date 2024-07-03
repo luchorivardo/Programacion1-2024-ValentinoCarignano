@@ -4,6 +4,7 @@ using CDatos.Contexts;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CDatos.Migrations
 {
     [DbContext(typeof(LibreriaContext))]
-    partial class ExampleContextModelSnapshot : ModelSnapshot
+    [Migration("20240703223345_Relaciones")]
+    partial class Relaciones
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -31,18 +34,22 @@ namespace CDatos.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdAutor"));
 
-                    b.Property<string>("Biografia")
+                    b.Property<string>("BiografiaAutor")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("CantidadLibrosEscritos")
+                    b.Property<int>("CantidadLibrosEscritosAutor")
                         .HasColumnType("int");
 
-                    b.Property<DateTime>("FechaNacimiento")
+                    b.Property<DateTime>("FechaNacimientoAutor")
                         .HasColumnType("datetime2");
 
                     b.Property<int?>("IdPersona")
                         .HasColumnType("int");
+
+                    b.Property<string>("NacionalidadAutor")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("IdAutor")
                         .HasName("PK_ID_AUTOR");
@@ -294,10 +301,6 @@ namespace CDatos.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Documento")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Nacionalidad")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 

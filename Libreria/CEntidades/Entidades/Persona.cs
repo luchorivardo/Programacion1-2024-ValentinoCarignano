@@ -15,6 +15,7 @@ namespace CEntidades.Entidades
         public string TipoDocumento { get; set; }
         public string Nombre { get; set; }
         public string Apellido { get; set;}
+        public string Nacionalidad { get; set; }
         public string Telefono { get; set; }
 
         public Autor? Autor { get; set; }

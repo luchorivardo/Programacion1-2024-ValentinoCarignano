@@ -14,6 +14,8 @@ namespace CEntidades.Entidades
         public string Cargo { get; set; }
         public double Sueldo { get; set; }
 
+        public ICollection<Prestamo> Prestamos { get; set; }
+        public ICollection<Venta> Ventas { get; set; }
         public Persona PersonaEmpleado { get; set; }
     }
 }
