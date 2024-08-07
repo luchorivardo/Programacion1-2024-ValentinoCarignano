@@ -1,53 +1,54 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Text.RegularExpressions;
-using System.Threading.Tasks;
-using Azure.Identity;
-using CDatos.Contexts;
+﻿using CDatos.Contexts;
+using CDatos.Repositories.Contracts;
 using CEntidades.Entidades;
-using Microsoft.EntityFrameworkCore;
-using static System.Runtime.InteropServices.JavaScript.JSType;
+using CLogica.Contracts;
+using System.Text.RegularExpressions;
 
-namespace CLogica.Metodos
+namespace CLogica.Implementations
 {
-    public class CRUDPersona
+    public class PersonaLogic : IPersonaLogic
     {
-        LibreriaContext context = new LibreriaContext();
+        private IPersonaRepository _personaRepository;
+
+        public PersonaLogic(IPersonaRepository exampleRepository)
+        {
+            _personaRepository = exampleRepository;
+        }
+
         public void AltaPersona(Persona persona)
         {
             Persona personaNueva = new Persona();
+
+            List<string> camposErroneos = new List<string>();
 
             if (persona == null)
             {
                 throw new ArgumentNullException("No se ha ingresado ninguna persona.");
             }
 
-            if (context.Persona.Any(p => p.Documento == persona.Documento))
+            if (_personaRepository.FindByCondition(p => p.Documento == persona.Documento) != null)
             {
                 throw new InvalidOperationException("El DNI no puede coincidir con uno ya ingresado.");
             }
 
             if (!DocumentoEsValido(persona.Documento))
             {
-                throw new ArgumentException("El DNI ingresado no es valido.");
+                camposErroneos.Add("documento");
             }
 
             if (!NombreApellidoEsValido(persona.Nombre))
             {
-                throw new ArgumentException("El nombre ingresado no es valido.");
+                camposErroneos.Add("nombre");
             }
 
             if (!NombreApellidoEsValido(persona.Apellido))
             {
-                throw new ArgumentException("El apellido ingresado no es valido.");
+                camposErroneos.Add("apellido");
             }
 
             if (!TelefonoEsValido(persona.Telefono))
             {
-                throw new ArgumentException("El apellido ingresado no es valido.");
+                camposErroneos.Add("telefono");
             }
 
             if (persona.Autor != null)
@@ -64,35 +65,38 @@ namespace CLogica.Metodos
             }
             else
             {
-                throw new ArgumentException("La persona debe ser de tipo Autor, Cliente o Empleado.");
+                camposErroneos.Add("tipo");
             }
 
+            //TODO: hacer metodo para mostrar campos erroneos
+
+
             personaNueva = persona;
-            context.Persona.Add(personaNueva);
-            context.SaveChanges();
+            _personaRepository.Create(personaNueva);
+            _personaRepository.Save();
         }
 
-        public List<Persona> ObtenerPersonas()
+        public void BajaPersona(string documento)
         {
-            return context.Persona.ToList();
-        }
-
-        public void BajaPersona(Persona persona)
-        {
-            if (persona == null)
+            if (documento == null)
             {
                 throw new ArgumentNullException("No se ha seleccionado ninguna persona.");
             }
 
-            var personaEliminada = context.Persona.FirstOrDefault(p => p.Documento == persona.Documento);
+            Persona? personaEliminada = _personaRepository.FindByCondition(p => p.Documento == documento).FirstOrDefault();
 
             if (personaEliminada == null)
             {
                 throw new InvalidOperationException("La persona que se desea eliminar no existe.");
             }
 
-            context.Persona.Remove(personaEliminada);
-            context.SaveChanges();
+            _personaRepository.Delete(personaEliminada);
+            _personaRepository.Save();
+        }
+
+        public void ActualizacionPersona(string documento, string nombre, string apellido)
+        {
+
         }
 
         //Metodos de validacion

@@ -5,9 +5,9 @@ namespace EjemploRepositorios
 {
     public partial class Form1 : Form
     {
-        private IExampleLogic _exampleLogic;
+        private IPersonaLogic _exampleLogic;
 
-        public Form1(IExampleLogic exampleLogic)
+        public Form1(IPersonaLogic exampleLogic)
         {
             _exampleLogic = exampleLogic;
             InitializeComponent();
