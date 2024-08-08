@@ -36,8 +36,11 @@ namespace EjemploRepositorios
             return Host.CreateDefaultBuilder()
                 .ConfigureServices((context, services) => {
 
-                    services.AddTransient<IPersonaLogic, PersonaLogic>();
+                    services.AddTransient<IAutorRepository, AutorRepository>();
                     services.AddTransient<IPersonaRepository, PersonaRepository>();
+
+                    services.AddTransient<IAutorLogic, AutorLogic>();
+                    services.AddTransient<IPersonaLogic, PersonaLogic>();
 
                     services.AddTransient<Form1>();
 

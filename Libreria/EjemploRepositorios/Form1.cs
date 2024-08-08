@@ -15,7 +15,7 @@ namespace EjemploRepositorios
 
         private async void Form1_Load(object sender, EventArgs e)
         {
-            List<Libro> examples = await _exampleLogic.GetAll();
+            List<Persona> examples = await _exampleLogic.GetAll();
         }
     }
 }

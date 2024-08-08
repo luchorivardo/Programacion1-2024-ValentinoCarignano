@@ -4,8 +4,9 @@ namespace CLogica.Contracts
 {
     public interface IPersonaLogic
     {
-        void AltaPersona(Persona persona);
+        void AltaPersona(Persona personaAgregar);
         void BajaPersona(string documento);
-        void ActualizacionPersona(string documento, string nombre, string apellido);
+        void ActualizacionPersona(string documento, Persona personaActualizar);
+        Task<List<Persona>> GetAll();
     }
 }

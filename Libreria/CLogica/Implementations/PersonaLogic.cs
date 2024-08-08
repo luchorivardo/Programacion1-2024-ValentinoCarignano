@@ -2,6 +2,7 @@
 using CDatos.Repositories.Contracts;
 using CEntidades.Entidades;
 using CLogica.Contracts;
+using System.Linq;
 using System.Text.RegularExpressions;
 
 namespace CLogica.Implementations
@@ -10,96 +11,147 @@ namespace CLogica.Implementations
     {
         private IPersonaRepository _personaRepository;
 
-        public PersonaLogic(IPersonaRepository exampleRepository)
+        public PersonaLogic(IPersonaRepository personaRepository)
         {
-            _personaRepository = exampleRepository;
+            _personaRepository = personaRepository;
         }
 
-        public void AltaPersona(Persona persona)
+        public async Task<List<Persona>> GetAll()
+        {
+            return await _personaRepository.GetAll();
+        }
+
+        public void AltaPersona(Persona personaAgregar)
         {
             Persona personaNueva = new Persona();
 
             List<string> camposErroneos = new List<string>();
 
-            if (persona == null)
+            if (personaAgregar == null)
             {
                 throw new ArgumentNullException("No se ha ingresado ninguna persona.");
             }
 
-            if (_personaRepository.FindByCondition(p => p.Documento == persona.Documento) != null)
-            {
-                throw new InvalidOperationException("El DNI no puede coincidir con uno ya ingresado.");
-            }
-
-            if (!DocumentoEsValido(persona.Documento))
+            if (!DocumentoEsValido(personaAgregar.Documento) || _personaRepository.FindByCondition(p => p.Documento == personaAgregar.Documento).Count() != 0)
             {
                 camposErroneos.Add("documento");
             }
 
-            if (!NombreApellidoEsValido(persona.Nombre))
+            if (!NombreApellidoEsValido(personaAgregar.Nombre))
             {
                 camposErroneos.Add("nombre");
             }
 
-            if (!NombreApellidoEsValido(persona.Apellido))
+            if (!NombreApellidoEsValido(personaAgregar.Apellido))
             {
                 camposErroneos.Add("apellido");
             }
 
-            if (!TelefonoEsValido(persona.Telefono))
+            if (!TelefonoEsValido(personaAgregar.Telefono))
             {
                 camposErroneos.Add("telefono");
             }
 
-            if (persona.Autor != null)
+            if (personaAgregar.Autor != null)
             {
-                personaNueva.Autor = persona.Autor;
+                personaNueva.Autor = personaAgregar.Autor;
             }
-            else if (persona.Cliente != null)
+            else if (personaAgregar.Cliente != null)
             {
-                personaNueva.Cliente = persona.Cliente;
+                personaNueva.Cliente = personaAgregar.Cliente;
             }
-            else if (persona.Empleado != null)
+            else if (personaAgregar.Empleado != null)
             {
-                personaNueva.Empleado = persona.Empleado;
+                personaNueva.Empleado = personaAgregar.Empleado;
             }
             else
             {
                 camposErroneos.Add("tipo");
             }
 
-            //TODO: hacer metodo para mostrar campos erroneos
+            if (camposErroneos.Count > 0)
+            {
+                throw new ArgumentException("Los siguientes campos son invalidos: ", string.Join(", ", camposErroneos));
+            }
 
+            personaNueva.Nombre = personaAgregar.Nombre;
+            personaNueva.Apellido = personaAgregar.Apellido;
+            personaNueva.Documento = personaAgregar.Documento;
+            personaNueva.Telefono = personaAgregar.Telefono;
 
-            personaNueva = persona;
             _personaRepository.Create(personaNueva);
             _personaRepository.Save();
         }
 
         public void BajaPersona(string documento)
         {
-            if (documento == null)
+            if (string.IsNullOrEmpty(documento) || !DocumentoEsValido(documento))
             {
-                throw new ArgumentNullException("No se ha seleccionado ninguna persona.");
+                throw new ArgumentException("El documento ingresado no es valido.");
             }
 
-            Persona? personaEliminada = _personaRepository.FindByCondition(p => p.Documento == documento).FirstOrDefault();
+            Persona? personaEliminar = _personaRepository.FindByCondition(p => p.Documento == documento).FirstOrDefault();
 
-            if (personaEliminada == null)
+            if (personaEliminar == null)
             {
                 throw new InvalidOperationException("La persona que se desea eliminar no existe.");
             }
 
-            _personaRepository.Delete(personaEliminada);
+            _personaRepository.Delete(personaEliminar);
             _personaRepository.Save();
         }
 
-        public void ActualizacionPersona(string documento, string nombre, string apellido)
+        public void ActualizacionPersona(string documento, Persona personaActualizar)
         {
+            if (string.IsNullOrEmpty(documento) || !DocumentoEsValido(documento))
+            {
+                throw new ArgumentException("El documento ingresado no es valido.");
+            }
 
+            Persona? persona = _personaRepository.FindByCondition(p => p.Documento == documento).FirstOrDefault();
+            
+            if (persona == null)
+            {
+                throw new ArgumentNullException("No se encontro una persona con ese documento.");
+            }
+
+            List<string> camposErroneos = new List<string>();
+
+            if (!DocumentoEsValido(personaActualizar.Documento))
+            {
+                camposErroneos.Add("documento");
+            }
+
+            if (!NombreApellidoEsValido(personaActualizar.Nombre))
+            {
+                camposErroneos.Add("nombre");
+            }
+
+            if (!NombreApellidoEsValido(personaActualizar.Apellido))
+            {
+                camposErroneos.Add("apellido");
+            }
+
+            if (!TelefonoEsValido(personaActualizar.Telefono))
+            {
+                camposErroneos.Add("telefono");
+            }
+
+            if (camposErroneos.Count > 0)
+            {
+                throw new ArgumentException("Los siguientes campos son invalidos: ", string.Join(", ", camposErroneos));
+            }
+
+            persona.Nombre = personaActualizar.Nombre;
+            persona.Apellido = personaActualizar.Apellido;
+            persona.Documento = personaActualizar.Documento;
+            persona.Telefono = personaActualizar.Telefono;
+
+            _personaRepository.Update(persona);
+            _personaRepository.Save();
         }
 
-        //Metodos de validacion
+        #region validaciones
         private bool DocumentoEsValido(string documento)
         {
             if (string.IsNullOrWhiteSpace(documento) || documento.Length < 8)
@@ -113,7 +165,7 @@ namespace CLogica.Implementations
                 {
                     return false;
                 }
-            }
+            }     
 
             return true;
         }
@@ -156,5 +208,6 @@ namespace CLogica.Implementations
             var regex = new Regex(@"^\+\d{1,4}\s?\d{1,5}\s?\d{6,}$");
             return regex.IsMatch(telefono);
         }
+        #endregion
     }
 }
