@@ -1,4 +1,5 @@
-﻿using CDatos.Repositories.Contracts;
+﻿using CDatos.Repositories;
+using CDatos.Repositories.Contracts;
 using CEntidades.Entidades;
 using CLogica.Contracts;
 using System;
