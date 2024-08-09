@@ -34,6 +34,15 @@ namespace CLogica.Implementations
             {
                 throw new ArgumentNullException("Se le debe asignar una persona al autor.");
             }
+
+            autorNuevo.FechaNacimiento = autorAgregar.FechaNacimiento;
+            autorNuevo.Biografia = autorAgregar.Biografia;
+            autorNuevo.CantidadLibrosEscritos = autorAgregar.CantidadLibrosEscritos;
+            autorNuevo.PersonaAutor = autorAgregar.PersonaAutor;
+            autorNuevo.Libros = autorAgregar.Libros;
+
+            _autorRepository.Create(autorNuevo);
+            _autorRepository.Save();
         }
         public void BajaAutor(string documento)
         {
