@@ -38,9 +38,12 @@ namespace EjemploRepositorios
 
                     services.AddTransient<IAutorRepository, AutorRepository>();
                     services.AddTransient<IPersonaRepository, PersonaRepository>();
+                    services.AddTransient<ILibroRepository, LibroRepository>();
+
 
                     services.AddTransient<IAutorLogic, AutorLogic>();
                     services.AddTransient<IPersonaLogic, PersonaLogic>();
+                    services.AddTransient<ILibroLogic, LibroLogic>();
 
                     services.AddTransient<Form1>();
 
