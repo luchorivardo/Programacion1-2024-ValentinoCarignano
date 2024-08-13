@@ -108,9 +108,9 @@ namespace CLogica.Implementations
                 throw new ArgumentException("El documento ingresado no es valido.");
             }
 
-            Persona? persona = _personaRepository.FindByCondition(p => p.Documento == documento).FirstOrDefault();
+            Persona? personaExistente = _personaRepository.FindByCondition(p => p.Documento == documento).FirstOrDefault();
             
-            if (persona == null)
+            if (personaExistente == null)
             {
                 throw new ArgumentNullException("No se encontro una persona con ese documento.");
             }
@@ -142,12 +142,12 @@ namespace CLogica.Implementations
                 throw new ArgumentException("Los siguientes campos son invalidos: ", string.Join(", ", camposErroneos));
             }
 
-            persona.Nombre = personaActualizar.Nombre;
-            persona.Apellido = personaActualizar.Apellido;
-            persona.Documento = personaActualizar.Documento;
-            persona.Telefono = personaActualizar.Telefono;
+            personaExistente.Nombre = personaActualizar.Nombre;
+            personaExistente.Apellido = personaActualizar.Apellido;
+            personaExistente.Documento = personaActualizar.Documento;
+            personaExistente.Telefono = personaActualizar.Telefono;
 
-            _personaRepository.Update(persona);
+            _personaRepository.Update(personaExistente);
             _personaRepository.Save();
         }
 

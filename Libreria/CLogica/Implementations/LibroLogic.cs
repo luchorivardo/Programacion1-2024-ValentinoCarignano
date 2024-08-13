@@ -83,6 +83,83 @@ namespace CLogica.Implementations
             _libroRepository.Save();
     }
 
+        public void BajaLibro(string isbn)
+        {
+            if (string.IsNullOrEmpty(isbn) || !ISBNEsValido(isbn))
+            {
+                throw new ArgumentException("El ISBN ingresado no es valido.");
+            }
+
+            Libro? libroEliminar = _libroRepository.FindByCondition(p => p.ISBN == isbn).FirstOrDefault();
+
+            if (libroEliminar == null)
+            {
+                throw new InvalidOperationException("El libro que se desea eliminar no existe.");
+            }
+
+            _libroRepository.Delete(libroEliminar);
+            _libroRepository.Save();
+        }
+
+        public void ActualizacionLibro(string isbn, Libro libroActualizar)
+        {
+
+            if (libroActualizar == null)
+            {
+                throw new ArgumentNullException("No se ha ingresado ningun libro.");
+            }
+
+            Libro? libroExistente = _libroRepository.FindByCondition(p => p.ISBN == isbn).FirstOrDefault();
+
+            if (libroExistente == null)
+            {
+                throw new InvalidOperationException("El libro que se desea actualizar no existe.");
+            }
+
+            List<string> camposErroneos = new List<string>();
+
+            if (libroActualizar.Titulo == null)
+            {
+                throw new ArgumentNullException("titulo");
+            }
+
+            if (libroActualizar.Descripcion == null)
+            {
+                throw new ArgumentNullException("descripcion");
+            }
+
+            if (libroActualizar.Autores == null)
+            {
+                throw new ArgumentNullException("autor");
+            }
+
+            if (libroActualizar.Generos == null)
+            {
+                throw new ArgumentNullException("genero");
+            }
+
+            if (libroActualizar.Editorial == null)
+            {
+                throw new ArgumentNullException("editorial");
+            }
+
+            if (libroActualizar.PrecioVenta <= 0)
+            {
+                throw new ArgumentNullException("precio");
+            }
+
+            if (camposErroneos.Count > 0)
+            {
+                throw new ArgumentException("Los siguientes campos son invalidos: ", string.Join(", ", camposErroneos));
+            }
+
+            libroExistente.Descripcion = libroActualizar.Descripcion;
+            libroExistente.PrecioVenta = libroActualizar.PrecioVenta;
+
+            _libroRepository.Create(libroExistente);
+            _libroRepository.Save();
+        }
+
         #region validaciones
         private bool ISBNEsValido(string isbn)
         {
