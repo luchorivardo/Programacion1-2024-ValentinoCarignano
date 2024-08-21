@@ -52,22 +52,22 @@ namespace CLogica.Implementations
                 camposErroneos.Add("telefono");
             }
 
-            if (personaAgregar.Autor != null)
-            {
-                personaNueva.Autor = personaAgregar.Autor;
-            }
-            else if (personaAgregar.Cliente != null)
-            {
-                personaNueva.Cliente = personaAgregar.Cliente;
-            }
-            else if (personaAgregar.Empleado != null)
-            {
-                personaNueva.Empleado = personaAgregar.Empleado;
-            }
-            else
-            {
-                camposErroneos.Add("tipo");
-            }
+            //if (personaAgregar.Autor != null)
+            //{
+            //    personaNueva.Autor = personaAgregar.Autor;
+            //}
+            //else if (personaAgregar.Cliente != null)
+            //{
+            //    personaNueva.Cliente = personaAgregar.Cliente;
+            //}
+            //else if (personaAgregar.Empleado != null)
+            //{
+            //    personaNueva.Empleado = personaAgregar.Empleado;
+            //}
+            //else
+            //{
+            //    camposErroneos.Add("tipo");
+            //}
 
             if (camposErroneos.Count > 0)
             {

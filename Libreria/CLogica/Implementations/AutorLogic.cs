@@ -45,6 +45,7 @@ namespace CLogica.Implementations
             _autorRepository.Create(autorNuevo);
             _autorRepository.Save();
         }
+
         public void BajaAutor(string documento)
         {
             if (string.IsNullOrEmpty(documento) || !DocumentoEsValido(documento))
