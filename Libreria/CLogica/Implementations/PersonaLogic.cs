@@ -16,12 +16,12 @@ namespace CLogica.Implementations
             _personaRepository = personaRepository;
         }
 
-        public async Task<List<Persona>> GetAll()
+        public async Task<List<Persona>> ObtenerPersonas()
         {
             return await _personaRepository.GetAll();
         }
 
-        public void AltaPersona(Persona personaAgregar)
+        public Persona AltaPersona(Persona personaAgregar)
         {
             Persona personaNueva = new Persona();
 
@@ -32,60 +32,50 @@ namespace CLogica.Implementations
                 throw new ArgumentNullException("No se ha ingresado ninguna persona.");
             }
 
-            if (!DocumentoEsValido(personaAgregar.Documento) || _personaRepository.FindByCondition(p => p.Documento == personaAgregar.Documento).Count() != 0)
+            if (!ValidacionesLogic.DocumentoEsValido(personaAgregar.Documento) || _personaRepository.FindByCondition(p => p.Documento == personaAgregar.Documento).Count() != 0)
             {
-                camposErroneos.Add("documento");
+                if(personaAgregar.Documento != null)
+                {
+                    camposErroneos.Add("documento");
+                }
             }
 
-            if (!NombreApellidoEsValido(personaAgregar.Nombre))
+            if (!ValidacionesLogic.NombreApellidoEsValido(personaAgregar.Nombre))
             {
                 camposErroneos.Add("nombre");
             }
 
-            if (!NombreApellidoEsValido(personaAgregar.Apellido))
+            if (!ValidacionesLogic.NombreApellidoEsValido(personaAgregar.Apellido))
             {
                 camposErroneos.Add("apellido");
             }
 
-            if (!TelefonoEsValido(personaAgregar.Telefono))
+            if (!ValidacionesLogic.TelefonoEsValido(personaAgregar.Telefono))
             {
                 camposErroneos.Add("telefono");
             }
-
-            //if (personaAgregar.Autor != null)
-            //{
-            //    personaNueva.Autor = personaAgregar.Autor;
-            //}
-            //else if (personaAgregar.Cliente != null)
-            //{
-            //    personaNueva.Cliente = personaAgregar.Cliente;
-            //}
-            //else if (personaAgregar.Empleado != null)
-            //{
-            //    personaNueva.Empleado = personaAgregar.Empleado;
-            //}
-            //else
-            //{
-            //    camposErroneos.Add("tipo");
-            //}
 
             if (camposErroneos.Count > 0)
             {
                 throw new ArgumentException("Los siguientes campos son invalidos: ", string.Join(", ", camposErroneos));
             }
 
+            personaNueva.TipoDocumento = personaAgregar.TipoDocumento;
+            personaNueva.Documento = personaAgregar.Documento;
             personaNueva.Nombre = personaAgregar.Nombre;
             personaNueva.Apellido = personaAgregar.Apellido;
-            personaNueva.Documento = personaAgregar.Documento;
+            personaNueva.Nacionalidad = personaAgregar.Nacionalidad;
             personaNueva.Telefono = personaAgregar.Telefono;
-
+            
             _personaRepository.Create(personaNueva);
             _personaRepository.Save();
+
+            return personaNueva;
         }
 
         public void BajaPersona(string documento)
         {
-            if (string.IsNullOrEmpty(documento) || !DocumentoEsValido(documento))
+            if (string.IsNullOrEmpty(documento) || !ValidacionesLogic.DocumentoEsValido(documento))
             {
                 throw new ArgumentException("El documento ingresado no es valido.");
             }
@@ -103,7 +93,7 @@ namespace CLogica.Implementations
 
         public void ActualizacionPersona(string documento, Persona personaActualizar)
         {
-            if (string.IsNullOrEmpty(documento) || !DocumentoEsValido(documento))
+            if (string.IsNullOrEmpty(documento) || !ValidacionesLogic.DocumentoEsValido(documento))
             {
                 throw new ArgumentException("El documento ingresado no es valido.");
             }
@@ -117,22 +107,22 @@ namespace CLogica.Implementations
 
             List<string> camposErroneos = new List<string>();
 
-            if (!DocumentoEsValido(personaActualizar.Documento))
+            if (!ValidacionesLogic.DocumentoEsValido(personaActualizar.Documento))
             {
                 camposErroneos.Add("documento");
             }
 
-            if (!NombreApellidoEsValido(personaActualizar.Nombre))
+            if (!ValidacionesLogic.NombreApellidoEsValido(personaActualizar.Nombre))
             {
                 camposErroneos.Add("nombre");
             }
 
-            if (!NombreApellidoEsValido(personaActualizar.Apellido))
+            if (!ValidacionesLogic.NombreApellidoEsValido(personaActualizar.Apellido))
             {
                 camposErroneos.Add("apellido");
             }
 
-            if (!TelefonoEsValido(personaActualizar.Telefono))
+            if (!ValidacionesLogic.TelefonoEsValido(personaActualizar.Telefono))
             {
                 camposErroneos.Add("telefono");
             }
@@ -150,64 +140,5 @@ namespace CLogica.Implementations
             _personaRepository.Update(personaExistente);
             _personaRepository.Save();
         }
-
-        #region validaciones
-        private bool DocumentoEsValido(string documento)
-        {
-            if (string.IsNullOrWhiteSpace(documento) || documento.Length < 8)
-            {
-                return false;
-            }
-
-            foreach (char c in documento)
-            {
-                if (!char.IsNumber(c))
-                {
-                    return false;
-                }
-            }     
-
-            return true;
-        }
-        private bool NombreApellidoEsValido(string texto)
-        {
-            if (string.IsNullOrWhiteSpace(texto))
-            {
-                return false;
-            }
-
-            texto = texto.Trim();
-
-            if (texto.Contains("  "))
-            {
-                return false;
-            }
-
-            if (texto.Length < 3 || texto.Length > 20)
-            {
-                return false;
-            }
-
-            foreach (char c in texto)
-            {
-                if (!char.IsLetter(c) && !char.IsWhiteSpace(c))
-                {
-                    return false;
-                }
-            }
-
-            return true;
-        }
-        private bool TelefonoEsValido(string telefono)
-        {
-            if (string.IsNullOrEmpty(telefono))
-            {
-                return true;
-            }
-
-            var regex = new Regex(@"^\+\d{1,4}\s?\d{1,5}\s?\d{6,}$");
-            return regex.IsMatch(telefono);
-        }
-        #endregion
     }
 }

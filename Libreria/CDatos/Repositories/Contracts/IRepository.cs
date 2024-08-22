@@ -4,6 +4,7 @@ namespace CDatos.Repositories.Contracts
 {
     public interface IRepository<T>
     {
+        IEnumerable<T> FindAll();
         Task<IEnumerable<T>> FindAllAsync();
         Task<IEnumerable<T>> FindByConditionAsync(Expression<Func<T, bool>> expression);
         IEnumerable<T> FindByCondition(Expression<Func<T, bool>> expression);

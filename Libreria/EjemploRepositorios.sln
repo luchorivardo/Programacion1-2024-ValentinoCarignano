@@ -11,8 +11,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CLogica", "CLogica\CLogica.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CDatos", "CDatos\CDatos.csproj", "{40155D8C-3757-499A-826A-140D8BB629F4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Console", "Console\Console.csproj", "{896BB4E4-E661-4C65-BDE0-9D578A9E8AB4}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,10 +33,6 @@ Global
 		{40155D8C-3757-499A-826A-140D8BB629F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{40155D8C-3757-499A-826A-140D8BB629F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{40155D8C-3757-499A-826A-140D8BB629F4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{896BB4E4-E661-4C65-BDE0-9D578A9E8AB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{896BB4E4-E661-4C65-BDE0-9D578A9E8AB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{896BB4E4-E661-4C65-BDE0-9D578A9E8AB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{896BB4E4-E661-4C65-BDE0-9D578A9E8AB4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

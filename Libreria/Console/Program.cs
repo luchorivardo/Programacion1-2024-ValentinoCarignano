@@ -109,7 +109,7 @@ personaLogic.AltaPersona(personaAgregar);
 ////examenLogic.ActualizacionExamen(2, 12, examenActualizar);
 #endregion
 
-var lista = personaLogic.GetAll().GetAwaiter().GetResult();
+var lista = personaLogic.ObtenerPersonas().GetAwaiter().GetResult();
 var jsonSerializerSettings = new JsonSerializerSettings { ReferenceLoopHandling = ReferenceLoopHandling.Ignore };
 foreach (var item in lista)
 {

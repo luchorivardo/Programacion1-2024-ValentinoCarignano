@@ -14,41 +14,69 @@ namespace CLogica.Implementations
     public class AutorLogic : IAutorLogic
     {
         private IAutorRepository _autorRepository;
+        private IPersonaLogic _personaLogic;
 
-        public AutorLogic(IAutorRepository autorRepository)
+        public AutorLogic(IAutorRepository autorRepository, IPersonaLogic personaLogic)
         {
             _autorRepository = autorRepository;
+            _personaLogic = personaLogic;
         }
 
-        public void AltaAutor(Autor autorAgregar)
+        public List<Autor> ObtenerAutores()
         {
-            Autor autorNuevo = new Autor();
+            return _autorRepository.FindAll().ToList();
+        }
 
-            List<string> camposErroneos = new List<string>();
+        public List<dynamic> ObtenerAutoresParaListado()
+        {
+            return _autorRepository.ObtenerAutores().Select(a => new { IdAutor = a.IdAutor, Nombre = a.PersonaAutor.Nombre, Apellido = a.PersonaAutor.Apellido, FechaNacimiento = a.FechaNacimiento, Nacionalidad = a.PersonaAutor.Nacionalidad, Telefono = a.PersonaAutor.Telefono, Biografia = a.Biografia }).ToList<dynamic>();
+        }
 
-            if (autorAgregar == null)
+        public void AltaAutor(string nombre, string apellido, string nacionalidad, string telefono, string fechaNacimiento, string biografia)
+        {
+            try
             {
-                throw new ArgumentNullException("No se ha ingresado ningun autor.");
-            }
+                Persona personaAgregar = new Persona()
+                {
+                    Nombre = nombre,
+                    Apellido = apellido,
+                    Telefono = telefono,
+                    Nacionalidad = nacionalidad
+                };
 
-            if (autorAgregar.PersonaAutor == null)
+                Persona personaNueva = _personaLogic.AltaPersona(personaAgregar);
+
+                Autor autorNuevo = new Autor()
+                {
+                    PersonaAutor = personaNueva,
+                    FechaNacimiento = ValidacionesLogic.ParsearFecha(fechaNacimiento),
+                    Biografia = biografia
+                };
+
+                List<string> camposErroneos = new List<string>();
+
+                if (string.IsNullOrEmpty(autorNuevo.Biografia))
+                {
+                    camposErroneos.Add("Biografia");
+                }
+
+                if (camposErroneos.Count > 0)
+                {
+                    throw new ArgumentException("Los siguientes campos son inválidos: ", string.Join(", ", camposErroneos));
+                }
+
+                _autorRepository.CreateAutor(autorNuevo);
+                _autorRepository.Save();
+            }
+            catch (Exception)
             {
-                throw new ArgumentNullException("Se le debe asignar una persona al autor.");
+                throw;
             }
-
-            autorNuevo.FechaNacimiento = autorAgregar.FechaNacimiento;
-            autorNuevo.Biografia = autorAgregar.Biografia;
-            autorNuevo.CantidadLibrosEscritos = autorAgregar.CantidadLibrosEscritos;
-            autorNuevo.PersonaAutor = autorAgregar.PersonaAutor;
-            autorNuevo.Libros = autorAgregar.Libros;
-
-            _autorRepository.Create(autorNuevo);
-            _autorRepository.Save();
         }
 
         public void BajaAutor(string documento)
         {
-            if (string.IsNullOrEmpty(documento) || !DocumentoEsValido(documento))
+            if (string.IsNullOrEmpty(documento) || !ValidacionesLogic.DocumentoEsValido(documento))
             {
                 throw new ArgumentException("El documento ingresado no es valido.");
             }
@@ -66,7 +94,7 @@ namespace CLogica.Implementations
 
         public void ActualizacionAutor(string documento, Autor autorActualizar)
         {
-            if (string.IsNullOrEmpty(documento) || !DocumentoEsValido(documento))
+            if (string.IsNullOrEmpty(documento) || !ValidacionesLogic.DocumentoEsValido(documento))
             {
                 throw new ArgumentException("El documento ingresado no es valido.");
             }
@@ -85,64 +113,5 @@ namespace CLogica.Implementations
             _autorRepository.Update(autor);
             _autorRepository.Save();
         }
-
-        #region validaciones
-        private bool DocumentoEsValido(string documento)
-        {
-            if (string.IsNullOrWhiteSpace(documento) || documento.Length < 8)
-            {
-                return false;
-            }
-
-            foreach (char c in documento)
-            {
-                if (!char.IsNumber(c))
-                {
-                    return false;
-                }
-            }
-
-            return true;
-        }
-        private bool NombreApellidoEsValido(string texto)
-        {
-            if (string.IsNullOrWhiteSpace(texto))
-            {
-                return false;
-            }
-
-            texto = texto.Trim();
-
-            if (texto.Contains("  "))
-            {
-                return false;
-            }
-
-            if (texto.Length < 3 || texto.Length > 20)
-            {
-                return false;
-            }
-
-            foreach (char c in texto)
-            {
-                if (!char.IsLetter(c) && !char.IsWhiteSpace(c))
-                {
-                    return false;
-                }
-            }
-
-            return true;
-        }
-        private bool TelefonoEsValido(string telefono)
-        {
-            if (string.IsNullOrEmpty(telefono))
-            {
-                return true;
-            }
-
-            var regex = new Regex(@"^\+\d{1,4}\s?\d{1,5}\s?\d{6,}$");
-            return regex.IsMatch(telefono);
-        }
-        #endregion
     }
 }

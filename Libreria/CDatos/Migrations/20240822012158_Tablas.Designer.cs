@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CDatos.Migrations
 {
     [DbContext(typeof(LibreriaContext))]
-    [Migration("20240702210625_Tablas")]
+    [Migration("20240822012158_Tablas")]
     partial class Tablas
     {
         /// <inheritdoc />
@@ -34,27 +34,25 @@ namespace CDatos.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdAutor"));
 
-                    b.Property<string>("BiografiaAutor")
+                    b.Property<string>("Biografia")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("CantidadLibrosEscritosAutor")
+                    b.Property<int>("CantidadLibrosEscritos")
                         .HasColumnType("int");
 
-                    b.Property<DateTime>("FechaNacimientoAutor")
+                    b.Property<DateTime>("FechaNacimiento")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("NacionalidadAutor")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("PersonaAutorIdPersona")
+                    b.Property<int?>("IdPersona")
                         .HasColumnType("int");
 
                     b.HasKey("IdAutor")
                         .HasName("PK_ID_AUTOR");
 
-                    b.HasIndex("PersonaAutorIdPersona");
+                    b.HasIndex("IdPersona")
+                        .IsUnique()
+                        .HasFilter("[IdPersona] IS NOT NULL");
 
                     b.ToTable("Autor");
                 });
@@ -67,18 +65,18 @@ namespace CDatos.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdAutorLibro"));
 
-                    b.Property<int>("AutorAutorLibroIdAutor")
+                    b.Property<int>("IdAutor")
                         .HasColumnType("int");
 
-                    b.Property<int>("LibroAutorLibroIdLibro")
+                    b.Property<int>("IdLibro")
                         .HasColumnType("int");
 
                     b.HasKey("IdAutorLibro")
                         .HasName("PK_ID_AUTORLIBRO");
 
-                    b.HasIndex("AutorAutorLibroIdAutor");
+                    b.HasIndex("IdAutor");
 
-                    b.HasIndex("LibroAutorLibroIdLibro");
+                    b.HasIndex("IdLibro");
 
                     b.ToTable("AutorLibro");
                 });
@@ -94,16 +92,18 @@ namespace CDatos.Migrations
                     b.Property<bool>("EsSocio")
                         .HasColumnType("bit");
 
+                    b.Property<int?>("IdPersona")
+                        .HasColumnType("int");
+
                     b.Property<bool>("PagaIVA")
                         .HasColumnType("bit");
-
-                    b.Property<int>("PersonaClienteIdPersona")
-                        .HasColumnType("int");
 
                     b.HasKey("IdCliente")
                         .HasName("PK_ID_CLIENTE");
 
-                    b.HasIndex("PersonaClienteIdPersona");
+                    b.HasIndex("IdPersona")
+                        .IsUnique()
+                        .HasFilter("[IdPersona] IS NOT NULL");
 
                     b.ToTable("Cliente");
                 });
@@ -116,11 +116,16 @@ namespace CDatos.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdCopia"));
 
+                    b.Property<int>("IdLibro")
+                        .HasColumnType("int");
+
                     b.Property<double>("PrecioPrestamo")
                         .HasColumnType("float");
 
                     b.HasKey("IdCopia")
                         .HasName("PK_ID_COPIA");
+
+                    b.HasIndex("IdLibro");
 
                     b.ToTable("Copia");
                 });
@@ -166,7 +171,7 @@ namespace CDatos.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("PersonaEmpleadoIdPersona")
+                    b.Property<int?>("IdPersona")
                         .HasColumnType("int");
 
                     b.Property<double>("Sueldo")
@@ -175,7 +180,9 @@ namespace CDatos.Migrations
                     b.HasKey("IdEmpleado")
                         .HasName("PK_ID_EMPLEADO");
 
-                    b.HasIndex("PersonaEmpleadoIdPersona");
+                    b.HasIndex("IdPersona")
+                        .IsUnique()
+                        .HasFilter("[IdPersona] IS NOT NULL");
 
                     b.ToTable("Empleado");
                 });
@@ -224,18 +231,18 @@ namespace CDatos.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdGeneroLibro"));
 
-                    b.Property<int>("GeneroGeneroLibroIdGenero")
+                    b.Property<int>("IdGenero")
                         .HasColumnType("int");
 
-                    b.Property<int>("LibroGeneroLibroIdLibro")
+                    b.Property<int>("IdLibro")
                         .HasColumnType("int");
 
                     b.HasKey("IdGeneroLibro")
                         .HasName("PK_ID_GENEROLIBRO");
 
-                    b.HasIndex("GeneroGeneroLibroIdGenero");
+                    b.HasIndex("IdGenero");
 
-                    b.HasIndex("LibroGeneroLibroIdLibro");
+                    b.HasIndex("IdLibro");
 
                     b.ToTable("GeneroLibro");
                 });
@@ -252,9 +259,6 @@ namespace CDatos.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("EditorialLibroIdEditorial")
-                        .HasColumnType("int");
-
                     b.Property<DateTime>("FechaPublicacion")
                         .HasColumnType("datetime2");
 
@@ -262,8 +266,11 @@ namespace CDatos.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("PrecioVenta")
+                    b.Property<int>("IdEditorial")
                         .HasColumnType("int");
+
+                    b.Property<float>("PrecioVenta")
+                        .HasColumnType("real");
 
                     b.Property<string>("Titulo")
                         .IsRequired()
@@ -272,7 +279,7 @@ namespace CDatos.Migrations
                     b.HasKey("IdLibro")
                         .HasName("PK_ID_LIBRO");
 
-                    b.HasIndex("EditorialLibroIdEditorial");
+                    b.HasIndex("IdEditorial");
 
                     b.ToTable("Libro");
                 });
@@ -290,6 +297,9 @@ namespace CDatos.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Documento")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Nacionalidad")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -298,11 +308,9 @@ namespace CDatos.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Telefono")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("TipoDocumento")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("IdPersona")
@@ -328,8 +336,28 @@ namespace CDatos.Migrations
                     b.Property<DateTime>("FechaLimite")
                         .HasColumnType("datetime2");
 
+                    b.Property<int>("IdCliente")
+                        .HasColumnType("int");
+
+                    b.Property<int>("IdCopia")
+                        .HasColumnType("int");
+
+                    b.Property<int>("IdEmpleado")
+                        .HasColumnType("int");
+
+                    b.Property<int>("IdFormaPago")
+                        .HasColumnType("int");
+
                     b.HasKey("IdPrestamo")
                         .HasName("PK_ID_PRESTAMO");
+
+                    b.HasIndex("IdCliente");
+
+                    b.HasIndex("IdCopia");
+
+                    b.HasIndex("IdEmpleado");
+
+                    b.HasIndex("IdFormaPago");
 
                     b.ToTable("Prestamo");
                 });
@@ -345,8 +373,28 @@ namespace CDatos.Migrations
                     b.Property<DateTime>("FechaVenta")
                         .HasColumnType("datetime2");
 
+                    b.Property<int>("IdCliente")
+                        .HasColumnType("int");
+
+                    b.Property<int>("IdEmpleado")
+                        .HasColumnType("int");
+
+                    b.Property<int>("IdFormaPago")
+                        .HasColumnType("int");
+
+                    b.Property<int>("IdLibro")
+                        .HasColumnType("int");
+
                     b.HasKey("IdVenta")
                         .HasName("PK_ID_VENTA");
+
+                    b.HasIndex("IdCliente");
+
+                    b.HasIndex("IdEmpleado");
+
+                    b.HasIndex("IdFormaPago");
+
+                    b.HasIndex("IdLibro");
 
                     b.ToTable("Venta");
                 });
@@ -354,83 +402,197 @@ namespace CDatos.Migrations
             modelBuilder.Entity("CEntidades.Entidades.Autor", b =>
                 {
                     b.HasOne("CEntidades.Entidades.Persona", "PersonaAutor")
-                        .WithMany()
-                        .HasForeignKey("PersonaAutorIdPersona")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .WithOne("Autor")
+                        .HasForeignKey("CEntidades.Entidades.Autor", "IdPersona");
 
                     b.Navigation("PersonaAutor");
                 });
 
             modelBuilder.Entity("CEntidades.Entidades.AutorLibro", b =>
                 {
-                    b.HasOne("CEntidades.Entidades.Autor", "AutorAutorLibro")
+                    b.HasOne("CEntidades.Entidades.Autor", null)
                         .WithMany()
-                        .HasForeignKey("AutorAutorLibroIdAutor")
+                        .HasForeignKey("IdAutor")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("CEntidades.Entidades.Libro", "LibroAutorLibro")
+                    b.HasOne("CEntidades.Entidades.Libro", null)
                         .WithMany()
-                        .HasForeignKey("LibroAutorLibroIdLibro")
+                        .HasForeignKey("IdLibro")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-
-                    b.Navigation("AutorAutorLibro");
-
-                    b.Navigation("LibroAutorLibro");
                 });
 
             modelBuilder.Entity("CEntidades.Entidades.Cliente", b =>
                 {
                     b.HasOne("CEntidades.Entidades.Persona", "PersonaCliente")
-                        .WithMany()
-                        .HasForeignKey("PersonaClienteIdPersona")
+                        .WithOne("Cliente")
+                        .HasForeignKey("CEntidades.Entidades.Cliente", "IdPersona");
+
+                    b.Navigation("PersonaCliente");
+                });
+
+            modelBuilder.Entity("CEntidades.Entidades.Copia", b =>
+                {
+                    b.HasOne("CEntidades.Entidades.Libro", "Libro")
+                        .WithMany("Copias")
+                        .HasForeignKey("IdLibro")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("PersonaCliente");
+                    b.Navigation("Libro");
                 });
 
             modelBuilder.Entity("CEntidades.Entidades.Empleado", b =>
                 {
                     b.HasOne("CEntidades.Entidades.Persona", "PersonaEmpleado")
-                        .WithMany()
-                        .HasForeignKey("PersonaEmpleadoIdPersona")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .WithOne("Empleado")
+                        .HasForeignKey("CEntidades.Entidades.Empleado", "IdPersona");
 
                     b.Navigation("PersonaEmpleado");
                 });
 
             modelBuilder.Entity("CEntidades.Entidades.GeneroLibro", b =>
                 {
-                    b.HasOne("CEntidades.Entidades.Genero", "GeneroGeneroLibro")
+                    b.HasOne("CEntidades.Entidades.Genero", null)
                         .WithMany()
-                        .HasForeignKey("GeneroGeneroLibroIdGenero")
+                        .HasForeignKey("IdGenero")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("CEntidades.Entidades.Libro", "LibroGeneroLibro")
+                    b.HasOne("CEntidades.Entidades.Libro", null)
                         .WithMany()
-                        .HasForeignKey("LibroGeneroLibroIdLibro")
+                        .HasForeignKey("IdLibro")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-
-                    b.Navigation("GeneroGeneroLibro");
-
-                    b.Navigation("LibroGeneroLibro");
                 });
 
             modelBuilder.Entity("CEntidades.Entidades.Libro", b =>
                 {
-                    b.HasOne("CEntidades.Entidades.Editorial", "EditorialLibro")
-                        .WithMany()
-                        .HasForeignKey("EditorialLibroIdEditorial")
+                    b.HasOne("CEntidades.Entidades.Editorial", "Editorial")
+                        .WithMany("Libros")
+                        .HasForeignKey("IdEditorial")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("EditorialLibro");
+                    b.Navigation("Editorial");
+                });
+
+            modelBuilder.Entity("CEntidades.Entidades.Prestamo", b =>
+                {
+                    b.HasOne("CEntidades.Entidades.Cliente", "Cliente")
+                        .WithMany("Prestamos")
+                        .HasForeignKey("IdCliente")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("CEntidades.Entidades.Copia", "Copia")
+                        .WithMany("Prestamos")
+                        .HasForeignKey("IdCopia")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("CEntidades.Entidades.Empleado", "Empleado")
+                        .WithMany("Prestamos")
+                        .HasForeignKey("IdEmpleado")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("CEntidades.Entidades.FormaPago", "FormaPago")
+                        .WithMany("Prestamos")
+                        .HasForeignKey("IdFormaPago")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Cliente");
+
+                    b.Navigation("Copia");
+
+                    b.Navigation("Empleado");
+
+                    b.Navigation("FormaPago");
+                });
+
+            modelBuilder.Entity("CEntidades.Entidades.Venta", b =>
+                {
+                    b.HasOne("CEntidades.Entidades.Cliente", "Cliente")
+                        .WithMany("Ventas")
+                        .HasForeignKey("IdCliente")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("CEntidades.Entidades.Empleado", "Empleado")
+                        .WithMany("Ventas")
+                        .HasForeignKey("IdEmpleado")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("CEntidades.Entidades.FormaPago", "FormaPago")
+                        .WithMany("Ventas")
+                        .HasForeignKey("IdFormaPago")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("CEntidades.Entidades.Libro", "Libro")
+                        .WithMany("Ventas")
+                        .HasForeignKey("IdLibro")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Cliente");
+
+                    b.Navigation("Empleado");
+
+                    b.Navigation("FormaPago");
+
+                    b.Navigation("Libro");
+                });
+
+            modelBuilder.Entity("CEntidades.Entidades.Cliente", b =>
+                {
+                    b.Navigation("Prestamos");
+
+                    b.Navigation("Ventas");
+                });
+
+            modelBuilder.Entity("CEntidades.Entidades.Copia", b =>
+                {
+                    b.Navigation("Prestamos");
+                });
+
+            modelBuilder.Entity("CEntidades.Entidades.Editorial", b =>
+                {
+                    b.Navigation("Libros");
+                });
+
+            modelBuilder.Entity("CEntidades.Entidades.Empleado", b =>
+                {
+                    b.Navigation("Prestamos");
+
+                    b.Navigation("Ventas");
+                });
+
+            modelBuilder.Entity("CEntidades.Entidades.FormaPago", b =>
+                {
+                    b.Navigation("Prestamos");
+
+                    b.Navigation("Ventas");
+                });
+
+            modelBuilder.Entity("CEntidades.Entidades.Libro", b =>
+                {
+                    b.Navigation("Copias");
+
+                    b.Navigation("Ventas");
+                });
+
+            modelBuilder.Entity("CEntidades.Entidades.Persona", b =>
+                {
+                    b.Navigation("Autor");
+
+                    b.Navigation("Cliente");
+
+                    b.Navigation("Empleado");
                 });
 #pragma warning restore 612, 618
         }

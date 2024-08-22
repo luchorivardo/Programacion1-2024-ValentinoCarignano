@@ -3,11 +3,11 @@ using CLogica.Contracts;
 
 namespace EjemploRepositorios
 {
-    public partial class Form1 : Form
+    public partial class ABMLibro : Form
     {
         private IPersonaLogic _exampleLogic;
 
-        public Form1(IPersonaLogic exampleLogic)
+        public ABMLibro(IPersonaLogic exampleLogic)
         {
             _exampleLogic = exampleLogic;
             InitializeComponent();
@@ -15,7 +15,7 @@ namespace EjemploRepositorios
 
         private async void Form1_Load(object sender, EventArgs e)
         {
-            List<Persona> examples = await _exampleLogic.GetAll();
+            List<Persona> examples = await _exampleLogic.ObtenerPersonas();
         }
     }
 }

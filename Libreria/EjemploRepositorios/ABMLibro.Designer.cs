@@ -1,6 +1,6 @@
 ﻿namespace EjemploRepositorios
 {
-    partial class Form1
+    partial class ABMLibro
     {
         /// <summary>
         ///  Required designer variable.
