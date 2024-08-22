@@ -75,16 +75,16 @@ namespace CLogica
         {
             if (string.IsNullOrWhiteSpace(fechaString))
             {
-                throw new ArgumentException("La cadena de fecha no puede estar vacía o ser nula.", nameof(fechaString));
+                throw new ArgumentException("La fecha no puede estar vacía.", nameof(fechaString));
             }
 
-            if (DateTime.TryParse(fechaString, out DateTime fecha))
+            if (DateTime.TryParseExact(fechaString, "dd/MM/yyyy", System.Globalization.CultureInfo.InvariantCulture, System.Globalization.DateTimeStyles.None, out DateTime fecha))
             {
                 return fecha;
             }
             else
             {
-                throw new FormatException("La cadena no tiene un formato de fecha válido.");
+                throw new FormatException("La fecha no tiene un formato válido (dd/MM/yyyy.");
             }
         }
 

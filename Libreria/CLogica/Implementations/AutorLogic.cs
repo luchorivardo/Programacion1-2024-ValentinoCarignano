@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace CLogica.Implementations
 {
@@ -29,10 +30,10 @@ namespace CLogica.Implementations
 
         public List<dynamic> ObtenerAutoresParaListado()
         {
-            return _autorRepository.ObtenerAutores().Select(a => new { IdAutor = a.IdAutor, Nombre = a.PersonaAutor.Nombre, Apellido = a.PersonaAutor.Apellido, FechaNacimiento = a.FechaNacimiento, Nacionalidad = a.PersonaAutor.Nacionalidad, Telefono = a.PersonaAutor.Telefono, Biografia = a.Biografia }).ToList<dynamic>();
+            return _autorRepository.ObtenerAutores().Select(a => new { IdAutor = a.IdAutor, Nombre = a.PersonaAutor.Nombre, Apellido = a.PersonaAutor.Apellido, FechaNacimiento = a.FechaNacimiento, Nacionalidad = a.PersonaAutor.Nacionalidad, Telefono = a.PersonaAutor.Telefono, Email = a.PersonaAutor.Email, Biografia = a.Biografia }).ToList<dynamic>();
         }
 
-        public void AltaAutor(string nombre, string apellido, string nacionalidad, string telefono, string fechaNacimiento, string biografia)
+        public void AltaAutor(string nombre, string apellido, string nacionalidad, string email, string fechaNacimiento, string telefono, string biografia)
         {
             try
             {
@@ -41,6 +42,7 @@ namespace CLogica.Implementations
                     Nombre = nombre,
                     Apellido = apellido,
                     Telefono = telefono,
+                    Email = email,
                     Nacionalidad = nacionalidad
                 };
 
@@ -92,26 +94,56 @@ namespace CLogica.Implementations
             _autorRepository.Save();
         }
 
-        public void ActualizacionAutor(string documento, Autor autorActualizar)
+        public void ActualizacionAutor(string idAutor, string nombre, string apellido, string nacionalidad, string email, string fechaNacimiento, string telefono, string biografia)
         {
-            if (string.IsNullOrEmpty(documento) || !ValidacionesLogic.DocumentoEsValido(documento))
+            try
             {
-                throw new ArgumentException("El documento ingresado no es valido.");
+                Int32.TryParse(idAutor, out int id);
+                Autor? autorExistente = _autorRepository.GetById(id);
+
+                if (autorExistente == null)
+                {
+                    throw new ArgumentNullException("No se encontro un autor con el ID ingresado.");
+                }
+
+                Persona personaActualizar = new Persona()
+                {
+                    Nombre = nombre,
+                    Apellido = apellido,
+                    Telefono = telefono,
+                    Email = email,
+                    Nacionalidad = nacionalidad,
+                    Autor = autorExistente
+                };
+
+                Persona personaExistente = _personaLogic.ActualizacionPersona(personaActualizar);
+
+                Autor autorNuevo = new Autor()
+                {
+                    PersonaAutor = personaActualizar,
+                    FechaNacimiento = ValidacionesLogic.ParsearFecha(fechaNacimiento),
+                    Biografia = biografia
+                };
+
+                List<string> camposErroneos = new List<string>();
+
+                if (string.IsNullOrEmpty(autorNuevo.Biografia))
+                {
+                    camposErroneos.Add("Biografia");
+                }
+
+                if (camposErroneos.Count > 0)
+                {
+                    throw new ArgumentException("Los siguientes campos son inválidos: ", string.Join(", ", camposErroneos));
+                }
+
+                _autorRepository.CreateAutor(autorNuevo);
+                _autorRepository.Save();
             }
-
-            Autor? autor = _autorRepository.FindByCondition(p => p.PersonaAutor.Documento == documento).FirstOrDefault();
-
-            if (autor == null)
+            catch (Exception)
             {
-                throw new ArgumentNullException("No se encontro una persona con ese documento.");
+                throw;
             }
-
-            autor.Biografia = autorActualizar.Biografia;
-            autor.CantidadLibrosEscritos = autorActualizar.CantidadLibrosEscritos;
-            autor.Libros = autorActualizar.Libros;
-
-            _autorRepository.Update(autor);
-            _autorRepository.Save();
         }
     }
 }

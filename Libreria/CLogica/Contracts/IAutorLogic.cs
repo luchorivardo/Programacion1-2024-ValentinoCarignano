@@ -9,9 +9,9 @@ namespace CLogica.Contracts
 {
     public interface IAutorLogic
     {
-        void AltaAutor(string nombre, string apellido, string nacionalidad, string telefono, string fechaNacimiento, string biografia);
+        void AltaAutor(string nombre, string apellido, string nacionalidad, string email, string fechaNacimiento, string telefono, string biografia);
         void BajaAutor(string documento);
-        void ActualizacionAutor(string documento, Autor autorActualizar);
+        void ActualizacionAutor(string idAutor, string nombre, string apellido, string nacionalidad, string email, string fechaNacimiento, string telefono, string biografia);
         List<Autor> ObtenerAutores();
         List<dynamic> ObtenerAutoresParaListado();
     }

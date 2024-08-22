@@ -41,13 +41,37 @@ namespace CPresentacion
             string nombre = tbNombreAlta.Text;
             string apellido = tbApellidoAlta.Text;
             string nacionalidad = tbNacionalidadAlta.Text;
+            string email = tbEmailAlta.Text;
+            string fechaNacimiento = tbFechaNacimientoAlta.Text;
             string telefono = tbTelefonoAlta.Text;
-            string fechaNacimiento = tbTelefonoAlta.Text;
             string biografia = tbBiografiaAlta.Text;
+
             try
             {
-                _autorLogic.AltaAutor(nombre, apellido, nacionalidad, telefono, fechaNacimiento, biografia);
+                _autorLogic.AltaAutor(nombre, apellido, nacionalidad, email, fechaNacimiento, telefono, biografia);
                 MessageBox.Show("El autor se ha registrado con éxito.");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void btnActualizar_Click(object sender, EventArgs e)
+        {
+            string idAutor = tbIdAutorModificacion.Text;
+            string nombre = tbNombreModificacion.Text;
+            string apellido = tbApellidoModificacion.Text;
+            string nacionalidad = tbNacionalidadModificacion.Text;
+            string email = tbEmailModificacion.Text;
+            string fechaNacimiento = tbFechaNacimientoModificacion.Text;
+            string telefono = tbTelefonoModificacion.Text;
+            string biografia = tbBiografiaModificacion.Text;
+
+            try
+            {
+                _autorLogic.ActualizacionAutor(idAutor, nombre, apellido, nacionalidad, email, fechaNacimiento, telefono, biografia);
+                MessageBox.Show("El autor se ha actualizado con éxito.");
             }
             catch (Exception ex)
             {

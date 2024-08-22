@@ -55,6 +55,11 @@ namespace CLogica.Implementations
                 camposErroneos.Add("telefono");
             }
 
+            if (string.IsNullOrWhiteSpace(personaAgregar.Email))
+            {
+                camposErroneos.Add("email");
+            }
+
             if (camposErroneos.Count > 0)
             {
                 throw new ArgumentException("Los siguientes campos son invalidos: ", string.Join(", ", camposErroneos));
@@ -66,6 +71,7 @@ namespace CLogica.Implementations
             personaNueva.Apellido = personaAgregar.Apellido;
             personaNueva.Nacionalidad = personaAgregar.Nacionalidad;
             personaNueva.Telefono = personaAgregar.Telefono;
+            personaNueva.Email = personaAgregar.Email;
             
             _personaRepository.Create(personaNueva);
             _personaRepository.Save();
@@ -91,8 +97,10 @@ namespace CLogica.Implementations
             _personaRepository.Save();
         }
 
-        public void ActualizacionPersona(string documento, Persona personaActualizar)
+        public Persona ActualizacionPersona(Persona personaActualizar)
         {
+            //TODO: terminar metodo actualizar persona.
+
             if (string.IsNullOrEmpty(documento) || !ValidacionesLogic.DocumentoEsValido(documento))
             {
                 throw new ArgumentException("El documento ingresado no es valido.");
@@ -139,6 +147,8 @@ namespace CLogica.Implementations
 
             _personaRepository.Update(personaExistente);
             _personaRepository.Save();
+
+            return Persona personaExistente;
         }
     }
 }

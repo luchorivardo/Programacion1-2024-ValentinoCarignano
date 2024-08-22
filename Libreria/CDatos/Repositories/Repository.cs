@@ -34,6 +34,11 @@ namespace CDatos.Repositories
             return this._context.Set<T>().Where(expression).ToList();
         }
 
+        public T GetById(int id)
+        {
+            return this._context.Set<T>().Find(id);
+        }
+
         public async Task<T> GetByIdAsync(int id)
         {
             return await this._context.Set<T>().FindAsync(id);
