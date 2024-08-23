@@ -48,6 +48,8 @@
             lblNombreAlta = new Label();
             tbNombreAlta = new TextBox();
             tabModificacion = new TabPage();
+            tbIdAutorModificacion = new TextBox();
+            lbIdAutorModificacion = new Label();
             lbFechaNacimientoModificacion = new Label();
             tbFechaNacimientoModificacion = new TextBox();
             btnActualizar = new Button();
@@ -65,8 +67,6 @@
             tbNombreModificacion = new TextBox();
             tabBaja = new TabPage();
             openFileDialog1 = new OpenFileDialog();
-            lbIdAutorModificacion = new Label();
-            tbIdAutorModificacion = new TextBox();
             tabControlPrincipal.SuspendLayout();
             tabListado.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgvListadoAutores).BeginInit();
@@ -298,6 +298,23 @@
             tabModificacion.Text = "Modificacion";
             tabModificacion.UseVisualStyleBackColor = true;
             // 
+            // tbIdAutorModificacion
+            // 
+            tbIdAutorModificacion.Location = new Point(465, 35);
+            tbIdAutorModificacion.Margin = new Padding(3, 4, 3, 4);
+            tbIdAutorModificacion.Name = "tbIdAutorModificacion";
+            tbIdAutorModificacion.Size = new Size(180, 27);
+            tbIdAutorModificacion.TabIndex = 0;
+            // 
+            // lbIdAutorModificacion
+            // 
+            lbIdAutorModificacion.AutoSize = true;
+            lbIdAutorModificacion.Location = new Point(394, 38);
+            lbIdAutorModificacion.Name = "lbIdAutorModificacion";
+            lbIdAutorModificacion.Size = new Size(65, 20);
+            lbIdAutorModificacion.TabIndex = 27;
+            lbIdAutorModificacion.Text = "ID Autor";
+            // 
             // lbFechaNacimientoModificacion
             // 
             lbFechaNacimientoModificacion.AutoSize = true;
@@ -444,23 +461,6 @@
             // 
             openFileDialog1.FileName = "openFileDialog1";
             // 
-            // lbIdAutorModificacion
-            // 
-            lbIdAutorModificacion.AutoSize = true;
-            lbIdAutorModificacion.Location = new Point(394, 38);
-            lbIdAutorModificacion.Name = "lbIdAutorModificacion";
-            lbIdAutorModificacion.Size = new Size(65, 20);
-            lbIdAutorModificacion.TabIndex = 27;
-            lbIdAutorModificacion.Text = "ID Autor";
-            // 
-            // tbIdAutorModificacion
-            // 
-            tbIdAutorModificacion.Location = new Point(465, 35);
-            tbIdAutorModificacion.Margin = new Padding(3, 4, 3, 4);
-            tbIdAutorModificacion.Name = "tbIdAutorModificacion";
-            tbIdAutorModificacion.Size = new Size(180, 27);
-            tbIdAutorModificacion.TabIndex = 0;
-            // 
             // ABMAutor
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -469,7 +469,7 @@
             Controls.Add(tabControlPrincipal);
             Margin = new Padding(3, 4, 3, 4);
             Name = "ABMAutor";
-            Text = "ABMAutor";
+            Text = "Sistema de Gestion de Libreria";
             Load += ABMAutor_Load;
             tabControlPrincipal.ResumeLayout(false);
             tabListado.ResumeLayout(false);

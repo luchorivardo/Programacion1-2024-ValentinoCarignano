@@ -116,18 +116,11 @@ namespace CLogica.Implementations
                     Autor = autorExistente
                 };
 
-                Persona personaExistente = _personaLogic.ActualizacionPersona(personaActualizar);
-
-                Autor autorNuevo = new Autor()
-                {
-                    PersonaAutor = personaActualizar,
-                    FechaNacimiento = ValidacionesLogic.ParsearFecha(fechaNacimiento),
-                    Biografia = biografia
-                };
+                _personaLogic.ActualizacionPersona(personaActualizar);
 
                 List<string> camposErroneos = new List<string>();
 
-                if (string.IsNullOrEmpty(autorNuevo.Biografia))
+                if (string.IsNullOrEmpty(autorExistente.Biografia))
                 {
                     camposErroneos.Add("Biografia");
                 }
@@ -137,7 +130,10 @@ namespace CLogica.Implementations
                     throw new ArgumentException("Los siguientes campos son inválidos: ", string.Join(", ", camposErroneos));
                 }
 
-                _autorRepository.CreateAutor(autorNuevo);
+                autorExistente.FechaNacimiento = ValidacionesLogic.ParsearFecha(fechaNacimiento);
+                autorExistente.Biografia = biografia;
+
+                _autorRepository.CreateAutor(autorExistente);
                 _autorRepository.Save();
             }
             catch (Exception)

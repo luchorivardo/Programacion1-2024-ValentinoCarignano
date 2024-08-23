@@ -6,7 +6,7 @@ namespace CLogica.Contracts
     {
         Persona AltaPersona(Persona personaAgregar);
         void BajaPersona(string documento);
-        Persona ActualizacionPersona(Persona personaActualizar);
+        void ActualizacionPersona(Persona personaActualizar);
         Task<List<Persona>> ObtenerPersonas();
     }
 }

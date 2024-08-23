@@ -97,20 +97,13 @@ namespace CLogica.Implementations
             _personaRepository.Save();
         }
 
-        public Persona ActualizacionPersona(Persona personaActualizar)
+        public void ActualizacionPersona(Persona personaActualizar)
         {
-            //TODO: terminar metodo actualizar persona.
-
-            if (string.IsNullOrEmpty(documento) || !ValidacionesLogic.DocumentoEsValido(documento))
-            {
-                throw new ArgumentException("El documento ingresado no es valido.");
-            }
-
-            Persona? personaExistente = _personaRepository.FindByCondition(p => p.Documento == documento).FirstOrDefault();
+            Persona? personaExistente = _personaRepository.FindByCondition(p => p.Autor == personaActualizar.Autor).FirstOrDefault();
             
             if (personaExistente == null)
             {
-                throw new ArgumentNullException("No se encontro una persona con ese documento.");
+                throw new ArgumentNullException("No se encontro a la persona ingresada.");
             }
 
             List<string> camposErroneos = new List<string>();
@@ -144,11 +137,11 @@ namespace CLogica.Implementations
             personaExistente.Apellido = personaActualizar.Apellido;
             personaExistente.Documento = personaActualizar.Documento;
             personaExistente.Telefono = personaActualizar.Telefono;
+            personaExistente.Email = personaActualizar.Email;
+            personaExistente.Nacionalidad = personaActualizar.Nacionalidad;
 
             _personaRepository.Update(personaExistente);
             _personaRepository.Save();
-
-            return Persona personaExistente;
         }
     }
 }
