@@ -1,4 +1,5 @@
 ﻿using CDatos.Contexts;
+using CDatos.Repositories;
 using CDatos.Repositories.Contracts;
 using CEntidades.Entidades;
 using CLogica.Contracts;
@@ -79,18 +80,22 @@ namespace CLogica.Implementations
             return personaNueva;
         }
 
-        public void BajaPersona(string documento)
+        public void BajaPersona(string id)
         {
-            if (string.IsNullOrEmpty(documento) || !ValidacionesLogic.DocumentoEsValido(documento))
+            if (string.IsNullOrEmpty(id))
             {
                 throw new ArgumentException("El documento ingresado no es valido.");
             }
 
-            Persona? personaEliminar = _personaRepository.FindByCondition(p => p.Documento == documento).FirstOrDefault();
-
-            if (personaEliminar == null)
+            Persona? personaEliminar = new Persona();
+            if (Int32.TryParse(id, out int idPersona))
             {
-                throw new InvalidOperationException("La persona que se desea eliminar no existe.");
+                personaEliminar = _personaRepository.FindByCondition(p => p.IdPersona == idPersona).FirstOrDefault();
+
+                if (personaEliminar == null)
+                {
+                    throw new InvalidOperationException("La persona que se desea eliminar no existe.");
+                }
             }
 
             _personaRepository.Delete(personaEliminar);

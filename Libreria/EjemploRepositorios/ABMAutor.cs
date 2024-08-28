@@ -36,24 +36,25 @@ namespace CPresentacion
         private void ConfigureDataGridView()
         {
             DataGridViewButtonColumn deleteButtonColumn = new DataGridViewButtonColumn();
-            deleteButtonColumn.Name = "btnEliminar";
-            deleteButtonColumn.HeaderText = "Eliminar";
+            deleteButtonColumn.Name = "btnEliminarColumna";
+            deleteButtonColumn.HeaderText = "";
             deleteButtonColumn.Text = "Eliminar";
             deleteButtonColumn.UseColumnTextForButtonValue = true;
             dgvListadoAutores.Columns.Add(deleteButtonColumn);
             CargarListadoAutores();
-            deleteButtonColumn.DisplayIndex = dgvListadoAutores.Columns.Count -1;
+            deleteButtonColumn.DisplayIndex = dgvListadoAutores.Columns.Count - 1;
+
+            dgvListadoAutores.CellClick += dgvListadoAutores_CellClick;
         }
 
         private void dgvListadoAutores_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.ColumnIndex == dgvListadoAutores.Columns["DeleteButton"].Index && e.RowIndex >= 0)
+            if (e.ColumnIndex == dgvListadoAutores.Columns["btnEliminarColumna"].Index && e.RowIndex >= 0)
             {
-                // Obtén el ID del autor de la fila seleccionada
-                int autorId = Convert.ToInt32(dgvListadoAutores.Rows[e.RowIndex].Cells["IdAutor"].Value);
+                string autorId = dgvListadoAutores.Rows[e.RowIndex].Cells["IdAutor"].Value.ToString();
 
-                // Elimina el autor de la base de datos y del DataGridView
-                _autorLogic.BajaAutor(autorId, e.RowIndex);
+                _autorLogic.BajaAutor(autorId);
+                CargarListadoAutores();
             }
         }
 
@@ -71,26 +72,20 @@ namespace CPresentacion
             {
                 _autorLogic.AltaAutor(nombre, apellido, nacionalidad, email, fechaNacimiento, telefono, biografia);
                 MessageBox.Show("El autor se ha registrado con éxito.");
+
+                tbNombreAlta.Clear();
+                tbApellidoAlta.Clear();
+                tbNacionalidadAlta.Clear();
+                tbEmailAlta.Clear();
+                tbFechaNacimientoAlta.Clear();
+                tbTelefonoAlta.Clear();
+                tbBiografiaAlta.Clear();
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
         }
-
-        private void btnEliminar_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                _autorLogic.BajaAutor();
-                MessageBox.Show("El autor se ha eliminado con éxito.");
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
-
 
         private void btnActualizar_Click(object sender, EventArgs e)
         {
@@ -107,11 +102,25 @@ namespace CPresentacion
             {
                 _autorLogic.ActualizacionAutor(idAutor, nombre, apellido, nacionalidad, email, fechaNacimiento, telefono, biografia);
                 MessageBox.Show("El autor se ha actualizado con éxito.");
+
+                tbIdAutorModificacion.Clear();
+                tbNombreModificacion.Clear();
+                tbApellidoModificacion.Clear();
+                tbNacionalidadModificacion.Clear();
+                tbEmailModificacion.Clear();
+                tbFechaNacimientoModificacion.Clear();
+                tbTelefonoModificacion.Clear();
+                tbBiografiaModificacion.Clear();
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void bnRecargarAlta_Click(object sender, EventArgs e)
+        {
+            CargarListadoAutores();
         }
     }
 }

@@ -76,19 +76,32 @@ namespace CLogica.Implementations
             }
         }
 
-        public void BajaAutor(string documento)
+        public void BajaAutor(string id)
         {
-            if (string.IsNullOrEmpty(documento) || !ValidacionesLogic.DocumentoEsValido(documento))
+            if (string.IsNullOrEmpty(id))
             {
                 throw new ArgumentException("El documento ingresado no es valido.");
             }
 
-            Autor? autorEliminar = _autorRepository.FindByCondition(p => p.PersonaAutor.Documento == documento).FirstOrDefault();
-
-            if (autorEliminar == null)
+            Autor? autorEliminar = new Autor();
+            if (Int32.TryParse(id, out  int idAutor))
             {
-                throw new InvalidOperationException("La persona que se desea eliminar no existe.");
+                autorEliminar = _autorRepository.FindByCondition(p => p.IdAutor == idAutor).FirstOrDefault();
+
+                if (autorEliminar == null)
+                {
+                    throw new InvalidOperationException("La persona que se desea eliminar no existe.");
+                }
+                
+                _personaLogic.BajaPersona(autorEliminar.PersonaAutor.IdPersona.ToString());
             }
+            else
+            {
+                throw new InvalidOperationException("El ID ingresado no es valido.");
+
+            }
+
+
 
             _autorRepository.Delete(autorEliminar);
             _autorRepository.Save();
