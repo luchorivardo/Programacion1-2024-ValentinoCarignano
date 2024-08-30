@@ -35,7 +35,66 @@ namespace Rotational_Cipher
     {
         public static string Rotate(string text, int shiftKey)
         {
-            throw new NotImplementedException("You need to implement this method.");
+            List<char> listaCifrada = new List<char>();
+
+            List<char> abecedarioMinusculas = new List<char>();
+            for (char c = 'a'; c <= 'z'; c++)
+            {
+                abecedarioMinusculas.Add(c);
+            }
+
+            List<char> abecedarioMayusculas = new List<char>();
+            for (char c = 'A'; c <= 'Z'; c++)
+            {
+                abecedarioMayusculas.Add(c);
+            }
+
+            shiftKey = shiftKey % 26;
+
+            foreach (char c in text)
+            {
+                if (char.IsLetter(c))
+                {
+                    if (char.ToUpper(c) == c) //MAYUSCULA
+                    {
+                        foreach (char letra in abecedarioMayusculas)
+                        {
+                            if (letra == c)
+                            {
+                                int indice = abecedarioMayusculas.IndexOf(letra);
+                                int nuevoIndice = (indice + shiftKey) % 26;
+                                if (nuevoIndice < 0) nuevoIndice += 26;
+
+                                listaCifrada.Add(abecedarioMayusculas[nuevoIndice]);
+                            }
+                        }
+                    }
+                    else //MINUSCULA
+                    {
+                        foreach (char letra in abecedarioMinusculas)
+                        {
+                            if (letra == c)
+                            {
+                                int indice = abecedarioMinusculas.IndexOf(letra);
+                                int nuevoIndice = (indice + shiftKey) % 26;
+                                if (nuevoIndice < 0) nuevoIndice += 26;
+
+                                listaCifrada.Add(abecedarioMinusculas[nuevoIndice]);
+                            }
+                        }
+                    }
+                }
+                else
+                {
+                    listaCifrada.Add(c);
+                }
+            }
+
+
+
+
+
+            return string.Concat(listaCifrada);
         }
     }
 }
