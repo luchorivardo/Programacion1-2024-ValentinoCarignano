@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -22,36 +23,66 @@ namespace BankAccount
         Instrucciones
         Su tarea es implementar cuentas bancarias que admitan apertura/cierre, retiros y depósitos de dinero.
 
-        Como se puede acceder a las cuentas bancarias de muchas maneras diferentes (Internet, teléfonos móviles, cargos automáticos), el software de su banco debe permitir que se pueda acceder a las cuentas de forma segura desde varios subprocesos/procesos (la terminología depende del lenguaje de programación que utilice) en paralelo. Por ejemplo, puede haber muchos depósitos y retiros en paralelo; debe asegurarse de que no haya condiciones de competencia entre el momento en que lee el saldo de la cuenta y el momento en que establece el nuevo saldo.
+        Como se puede acceder a las cuentas bancarias de muchas maneras diferentes (Internet, teléfonos móviles, cargos automáticos),
+        el software de su banco debe permitir que se pueda acceder a las cuentas de forma segura desde varios subprocesos/procesos
+        (la terminología depende del lenguaje de programación que utilice) en paralelo. Por ejemplo, puede haber muchos depósitos y retiros en
+        paralelo; debe asegurarse de que no haya condiciones de competencia entre el momento en que lee el saldo de la cuenta y el momento en que
+        establece el nuevo saldo.
 
         Debería ser posible cerrar una cuenta; las operaciones contra una cuenta cerrada deben fallar.
 
-        Este ejercicio requiere que manejes datos relacionados con divisas y dinero. Un enfoque normal es utilizar el decimal . Sin embargo, ten en cuenta que, en este caso, solo almacenarás el valor numérico de una divisa.
+        Este ejercicio requiere que manejes datos relacionados con divisas y dinero. Un enfoque normal es utilizar el decimal . Sin embargo, ten
+        en cuenta que, en este caso, solo almacenarás el valor numérico de una divisa.
     */
 
     public class BankAccount
     {
+        private decimal _balance;
+        private bool _isOpen;
+        private readonly object _lock = new object();
+
+
         public void Open()
         {
-            throw new NotImplementedException("You need to implement this method.");
+            lock (_lock)
+            {
+                _isOpen = true;
+                _balance = 0m;
+            }
         }
 
         public void Close()
         {
-            throw new NotImplementedException("You need to implement this method.");
+            lock (_lock)
+            {
+                if (_isOpen)
+                {
+                    _isOpen = false;
+                }
+            }
         }
 
         public decimal Balance
         {
             get
             {
-                throw new NotImplementedException("You need to implement this property.");
+                lock (_lock)
+                {
+                    if (!_isOpen)
+                    {
+                        throw new InvalidOperationException();
+                    }
+                    return _balance;
+                }
             }
         }
 
         public void UpdateBalance(decimal change)
         {
-            throw new NotImplementedException("You need to implement this method.");
+            lock (_lock)
+            {
+                _balance += change;
+            }
         }
     }
 }
