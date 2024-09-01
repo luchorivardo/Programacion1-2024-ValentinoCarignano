@@ -34,7 +34,39 @@
     {
         public static long GetLargestProduct(string digits, int span)
         {
-            throw new NotImplementedException("You need to implement this method.");
+            if (digits.Length < span || span < 0)
+            {
+                throw new ArgumentException();
+            }
+
+            foreach (char c in digits)
+            {
+                if (!char.IsDigit(c))
+                {
+                    throw new ArgumentException();
+                }
+            }
+
+            long respuesta = 0;
+
+            for (int i = 0; i <= digits.Length - span; i++)
+            {
+                string substring = digits.Substring(i, span);
+
+                long resultado = 1;
+                foreach (char n in substring)
+                {
+                    resultado *= n - '0';
+                }
+
+                if (resultado > respuesta)
+                {
+                    respuesta = resultado;
+                }
+            }
+
+            return respuesta;
         }
     }
 }
+            

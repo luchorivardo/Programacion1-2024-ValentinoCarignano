@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace RomanNumerals
 {
@@ -65,7 +66,36 @@ namespace RomanNumerals
     {
         public static string ToRoman(this int value)
         {
-            throw new NotImplementedException("You need to implement this method.");
+            string convertedRomanNumber = string.Empty;
+
+            Dictionary<int, string> romansNumber = new Dictionary<int, string>
+            {
+                { 1000, "M" },
+                { 900, "CM" },
+                { 500, "D" },
+                { 400, "CD" },
+                { 100, "C" },
+                { 90, "XC" },
+                { 50, "L" },
+                { 40, "XL" },
+                { 10, "X" },
+                { 9, "IX" },
+                { 6, "VI" },
+                { 5, "V" },
+                { 4, "IV" },
+                { 1, "I" },
+            };
+
+            foreach(KeyValuePair<int, string> item in romansNumber)
+            {
+                while (value >= item.Key)
+                {
+                    convertedRomanNumber += item.Value;
+                    value -= item.Key;
+                }
+            }
+
+            return convertedRomanNumber;
         }
     }
 }
