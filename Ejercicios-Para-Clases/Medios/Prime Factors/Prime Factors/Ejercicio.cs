@@ -37,7 +37,31 @@ namespace Prime_Factors
     {
         public static long[] Factors(long number)
         {
-            throw new NotImplementedException("You need to implement this method.");
+            List<long> factoresPrimos = new List<long>();
+
+            long divisor = 2;
+            do
+            {
+                if (number % divisor == 0)
+                {
+                    number /= (long)divisor;
+                    factoresPrimos.Add((long)divisor);
+                }
+
+                if (number == divisor)
+                {
+                    number /= (long)divisor;
+                    factoresPrimos.Add((long)divisor);
+                }
+
+                if (number % divisor != 0)
+                {
+                    divisor++;
+                }
+
+            } while (number > 1);
+
+            return factoresPrimos.ToArray();
         }
     }
 }
