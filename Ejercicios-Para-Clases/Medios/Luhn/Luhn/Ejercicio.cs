@@ -44,7 +44,47 @@ namespace Luhn
     {
         public static bool IsValid(string number)
         {
-            throw new NotImplementedException("You need to implement this method.");
+            bool isValidNumber = true;
+
+            number = new string(number.Trim().Replace(" ", "").Reverse().ToArray());
+
+            foreach (char c in number)
+            {
+                if (!char.IsDigit(c))
+                {
+                    isValidNumber = false;
+                }
+            }
+
+            if (number.Length == 1)
+            {
+                isValidNumber = false;
+            }
+
+            int sumaDigitos = 0;
+            for (int i = 0; i < number.Length; i ++)
+            {
+                int nuevoNumero = number[i] - '0';
+                if (i % 2 != 0)
+                {
+                    nuevoNumero = nuevoNumero * 2;
+                    if (nuevoNumero > 9)
+                    {
+                        nuevoNumero -= 9;
+                    }
+                }
+                sumaDigitos += nuevoNumero;
+            }
+
+            if((sumaDigitos / 10F) % 2 != 0 && sumaDigitos != 10)
+            {
+                isValidNumber = false;
+            }
+
+           
+
+
+            return isValidNumber;
         }
     }
 }
