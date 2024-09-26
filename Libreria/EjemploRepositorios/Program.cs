@@ -29,7 +29,7 @@ namespace EjemploRepositorios
             var host = CreateHostBuilder().Build();
             _serviceProvider = host.Services;
 
-            Application.Run(_serviceProvider.GetRequiredService<ABMAutor>());
+            Application.Run(_serviceProvider.GetRequiredService<ABMEditorial>());
         }
 
         static IHostBuilder CreateHostBuilder()
@@ -42,7 +42,7 @@ namespace EjemploRepositorios
                     services.AddTransient<IPersonaLogic, PersonaLogic>();
                     services.AddTransient<ILibroLogic, LibroLogic>();
                     //services.AddTransient<IClienteLogic, ClienteLogic>();
-                    //services.AddTransient<IEditorialLogic, EditorialLogic>();
+                    services.AddTransient<IEditorialLogic, EditorialLogic>();
                     //services.AddTransient<ICopiaLogic, CopiaLogic>();
 
 
@@ -51,12 +51,13 @@ namespace EjemploRepositorios
                     services.AddTransient<IPersonaRepository, PersonaRepository>();
                     services.AddTransient<ILibroRepository, LibroRepository>();
                     //services.AddTransient<IClienteRepository, ClienteRepository>();
-                    //services.AddTransient<IEditorialRepository, EditorialRepository>();
+                    services.AddTransient<IEditorialRepository, EditorialRepository>();
                     //services.AddTransient<ICopiaRepository, CopiaRepository>();
 
 
                     services.AddTransient<ABMAutor>();
                     services.AddTransient<ABMLibro>();
+                    services.AddTransient<ABMEditorial>();
 
                     services.AddDbContext<LibreriaContext>(options => options.UseSqlServer("Data Source=localhost\\SQLEXPRESS;Initial Catalog=LibreriaProg2024;Integrated Security=True;TrustServerCertificate=true"), ServiceLifetime.Transient);
                 });
